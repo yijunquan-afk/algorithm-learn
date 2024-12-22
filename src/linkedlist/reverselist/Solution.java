@@ -15,15 +15,15 @@ public class Solution {
     // 翻转链表。easy
     // 解析： https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html#%E6%80%9D%E8%B7%AF
     public ListNode reverseList(ListNode head) {
-        ListNode pre = new ListNode();
-        pre.next = head;
+        ListNode pre = null;
         ListNode cur = head;
-        while (cur.next != null) {
-            ListNode tmp = cur.next;
-            pre = cur;
+        ListNode tmp = null;
+        while (cur != null) {
+            tmp = cur.next;
             cur.next = pre;
+            pre = cur;
             cur = tmp;
         }
-        return cur;
+        return pre;
     }
 }
