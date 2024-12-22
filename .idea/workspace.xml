@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/array/minwindow/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/prefixsum/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/spiralmatrix/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/spiralmatrix2/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/longestOnes3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/longestOnes3/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/滑动窗口.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/滑动窗口.md" afterDir="false" />
-    </list>
+    <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734577893252</updated>
       <workItem from="1734577894190" duration="13287000" />
-      <workItem from="1734703005225" duration="16995000" />
+      <workItem from="1734703005225" duration="17788000" />
     </task>
     <servers />
   </component>
