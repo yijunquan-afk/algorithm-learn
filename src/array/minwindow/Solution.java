@@ -1,7 +1,6 @@
 package array.minwindow;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * ClassName:Solution
