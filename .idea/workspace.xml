@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/checkout/Checkout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/evalRPN/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/isValid/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/maxSlidingWindow/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/queue2stack/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/removeDuplicates/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack2queue/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/topKFrequent/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/longestSubarray/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
       <workItem from="1734703005225" duration="17788000" />
       <workItem from="1734859577794" duration="6331000" />
       <workItem from="1734871104350" duration="5431000" />
-      <workItem from="1734943149055" duration="49852000" />
+      <workItem from="1734943149055" duration="57534000" />
     </task>
     <servers />
   </component>
