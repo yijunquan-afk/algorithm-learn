@@ -5,30 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hashtable/canConstruct/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/fourSum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/groupAnagrams/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/intersection/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/isAnagram/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/isHappy/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/longestConsecutive/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/threeSum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtable/twoSum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/queue/AQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/queue/QueueADT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack/AStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack/AStackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack/LStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack/StackADT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/reverse/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/reverse2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/strStr/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/checkout/Checkout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/evalRPN/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/isValid/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/maxSlidingWindow/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/queue2stack/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/removeDuplicates/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/stack2queue/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/topKFrequent/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/longestsubstring/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/longestsubstring/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/minwindow/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/minwindow/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/spiralmatrix/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/spiralmatrix/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,9 +59,11 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true",
+    "应用程序.AQueueTest.executor": "Run",
     "应用程序.AStackTest.executor": "Run",
     "应用程序.Main.executor": "Run",
-    "应用程序.Solution.executor": "Debug"
+    "应用程序.MyQueue.executor": "Run",
+    "应用程序.Solution.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -103,7 +91,7 @@
       <workItem from="1734703005225" duration="17788000" />
       <workItem from="1734859577794" duration="6331000" />
       <workItem from="1734871104350" duration="5431000" />
-      <workItem from="1734943149055" duration="31280000" />
+      <workItem from="1734943149055" duration="49852000" />
     </task>
     <servers />
   </component>
@@ -135,6 +123,16 @@
           <url>file://$PROJECT_DIR$/src/hashtable/longestConsecutive/Solution.java</url>
           <line>25</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stackqueue/queue2stack/MyStack.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stackqueue/topKFrequent/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
