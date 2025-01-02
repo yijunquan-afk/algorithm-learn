@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stackqueue/longestSubarray/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/removeDuplicates/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/StockSpanner/StockSpanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/dailyTemperatures/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/finalPrices/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/nextGreaterElement/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/nextGreaterElements/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackqueue/traprain/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -84,7 +90,8 @@
       <workItem from="1734703005225" duration="17788000" />
       <workItem from="1734859577794" duration="6331000" />
       <workItem from="1734871104350" duration="5431000" />
-      <workItem from="1734943149055" duration="57534000" />
+      <workItem from="1734943149055" duration="76962000" />
+      <workItem from="1735820942514" duration="1088000" />
     </task>
     <servers />
   </component>
@@ -126,6 +133,26 @@
           <url>file://$PROJECT_DIR$/src/stackqueue/topKFrequent/Solution.java</url>
           <line>25</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stackqueue/nextGreaterElements/Solution.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stackqueue/traprain/Solution.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stackqueue/traprain/Solution.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/removeDuplicates/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
