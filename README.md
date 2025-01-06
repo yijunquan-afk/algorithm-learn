@@ -10,7 +10,7 @@
 | [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/array/majorityElement/Solution.java)   | [多种解法](https://leetcode.cn/problems/majority-element/solutions/146074/duo-shu-yuan-su-by-leetcode-solution/?envType=study-plan-v2&envId=top-interview-150) |
 | [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [maxProfit](src/array/maxProfit/Solution.java)               | 记录历史最小值，当前的减去其                                 |
 | [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [maxProfit](src/array/maxProfit2/Solution.java)              | 把所有递增的买上就行                                         |
-|                                                              |                                                              |                                                              |
+| [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/) | [isPalindrome](src/array/isPalindrome/Solution.java)         | 双指针                                                       |
 |                                                              |                                                              |                                                              |
 |                                                              |                                                              |                                                              |
 
@@ -110,6 +110,4 @@ for (int i = 0; i < nums.length; i++) {
 | [111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | [minDepth](src/tree/traversal/minDepth/Solution.java)        | 层次遍历找到叶子结点                     |
 
 ### 二叉树的属性
-
-
 

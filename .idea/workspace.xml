@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/array/majorityElement/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/maxProfit/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/maxProfit2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/removeDuplicates2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/rotate/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/averageOfLevels/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/connect/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/connect/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/inorderTraversal/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/inorderTraversal/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/largestValues/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/levelOrder/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/levelOrder/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/levelOrder2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/levelOrderBottom/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/maxDepth/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/minDepth/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/postorderTraversal/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/postorderTraversal/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/preorderTraversal/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/preorderTraversal/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/traversal/rightSideView/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/isPalindrome/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listarray.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +58,7 @@
     "应用程序.Main.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
     "应用程序.Solution.executor": "Run",
+    "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
     "应用程序.array.maxProfit2.Solution.executor": "Run",
     "应用程序.array.rotate.Solution.executor": "Debug"
@@ -139,7 +116,7 @@
       <workItem from="1734859577794" duration="6331000" />
       <workItem from="1734871104350" duration="5431000" />
       <workItem from="1734943149055" duration="76962000" />
-      <workItem from="1735820942514" duration="22016000" />
+      <workItem from="1735820942514" duration="23412000" />
     </task>
     <servers />
   </component>
@@ -216,6 +193,11 @@
           <url>file://$PROJECT_DIR$/src/array/rotate/Solution.java</url>
           <line>19</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/isPalindrome/Solution.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
