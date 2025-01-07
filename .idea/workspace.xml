@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/invertTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/isSymmetric/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/binaryTreePaths/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/countNodes/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/isBalanced/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/maxDepth/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/isSymmetric/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/isSymmetric/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +122,7 @@
       <workItem from="1734859577794" duration="6331000" />
       <workItem from="1734871104350" duration="5431000" />
       <workItem from="1734943149055" duration="76962000" />
-      <workItem from="1735820942514" duration="25912000" />
+      <workItem from="1735820942514" duration="36814000" />
     </task>
     <servers />
   </component>
