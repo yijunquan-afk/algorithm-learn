@@ -11,7 +11,15 @@ import tree.TreeNode;
  * @author: Junquan Yi
  */
 public class Solution {
+    // 404. 左叶子之和
     public int sumOfLeftLeaves(TreeNode root) {
-
+        if (root == null) return 0; // 终止条件
+        int leftV = sumOfLeftLeaves(root.left);
+        if(root.left != null && root.left.left == null && root.left.right == null){
+            leftV = root.left.val;
+        }
+        int rightV = sumOfLeftLeaves(root.right);
+        int sum = leftV + rightV;
+        return sum;
     }
 }
