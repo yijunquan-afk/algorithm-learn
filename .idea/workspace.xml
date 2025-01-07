@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/array/isPalindrome/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/invertTree/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/isSymmetric/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -69,6 +71,7 @@
       <recent name="array" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tree" />
       <recent name="tree.traversal" />
       <recent name="tree.traversal.levelOrder" />
       <recent name="tree.traversal.inorderTraversal" />
@@ -116,7 +119,7 @@
       <workItem from="1734859577794" duration="6331000" />
       <workItem from="1734871104350" duration="5431000" />
       <workItem from="1734943149055" duration="76962000" />
-      <workItem from="1735820942514" duration="23412000" />
+      <workItem from="1735820942514" duration="25912000" />
     </task>
     <servers />
   </component>
@@ -196,7 +199,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/isPalindrome/Solution.java</url>
-          <line>26</line>
+          <line>25</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
