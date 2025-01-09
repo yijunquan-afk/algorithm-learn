@@ -169,11 +169,17 @@ void backtracking(参数) {
 
 ### 分割
 
-
+| 题目链接                                                     | 实现代码                                                     | 说明                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------- |
+| [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/) | [partition](src/backtracking/partition/v/Solution.java)      |                                        |
+| [93. 复原 IP 地址](https://leetcode.cn/problems/restore-ip-addresses/) | [restoreIpAddresses](src/backtracking/partition/restoreIpAddresses/Solution.java) | 递归三层即可，剩下的直接进行合法性判断 |
 
 ### 子集
 
-
+| 题目链接                                                | 实现代码                                                     | 说明           |
+| ------------------------------------------------------- | ------------------------------------------------------------ | -------------- |
+| [78. 子集](https://leetcode.cn/problems/subsets/)       | [subsets](src/backtracking/subsets/subsets/Solution.java)    |                |
+| [90. 子集 II](https://leetcode.cn/problems/subsets-ii/) | [subsetsWithDup](src/backtracking/subsets/subsetsWithDup/Solution.java) | 去重：使用used |
 
 ### 排列
 
@@ -184,3 +190,13 @@ void backtracking(参数) {
 
 
 ### 其它
+
+| 题目链接                                                     | 实现代码                                                  | 说明             |
+| ------------------------------------------------------------ | --------------------------------------------------------- | ---------------- |
+| [491. 非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | [subsets](src/backtracking/subsets/subsets/Solution.java) | 去重逻辑有点特别 |
+|                                                              |                                                           |                  |
+
+### 
+
+
+
