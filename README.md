@@ -181,7 +181,14 @@ void backtracking(参数) {
 | [78. 子集](https://leetcode.cn/problems/subsets/)       | [subsets](src/backtracking/subsets/subsets/Solution.java)    |                |
 | [90. 子集 II](https://leetcode.cn/problems/subsets-ii/) | [subsetsWithDup](src/backtracking/subsets/subsetsWithDup/Solution.java) | 去重：使用used |
 
+
+
 ### 排列
+
+| 题目链接                                                     | 实现代码                                                     | 说明                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------- |
+| [46. 全排列](https://leetcode.cn/problems/permutations/)     | [permute](src/backtracking/permute/permute/Solution.java)    | 使用used判断哪些元素使用过了 |
+| [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/) | [permuteUnique](src/backtracking/permute/permuteUnique/Solution.java) | !used[i-1]: 树层去重更高效   |
 
 
 

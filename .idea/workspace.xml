@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/backtracking/others/findSubsequences/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backtracking/partition/partition/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backtracking/partition/restoreIpAddresses/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backtracking/subsets/subsets/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backtracking/subsets/subsetsWithDup/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/calculateScore/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/permute/permute/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/permute/permuteUnique/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -111,7 +109,7 @@
       <workItem from="1734943149055" duration="76962000" />
       <workItem from="1735820942514" duration="39061000" />
       <workItem from="1736323411881" duration="10044000" />
-      <workItem from="1736408285959" duration="13494000" />
+      <workItem from="1736408285959" duration="19605000" />
     </task>
     <servers />
   </component>
