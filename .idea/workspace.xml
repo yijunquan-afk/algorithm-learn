@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/backtracking/chess/solveNQueens/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/bst/isValidBST/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/bst/searchBST/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/buildTree/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/constructMaximumBinaryTree/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/hasPathSum/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/mergeTrees/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/pathsum/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/findBottomLeftValue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/findBottomLeftValue/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +67,7 @@
     "应用程序.AStackTest.executor": "Run",
     "应用程序.Main.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Run",
+    "应用程序.Solution.executor": "Debug",
     "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
     "应用程序.array.maxProfit2.Solution.executor": "Run",
@@ -107,7 +115,7 @@
       <workItem from="1734943149055" duration="76962000" />
       <workItem from="1735820942514" duration="39061000" />
       <workItem from="1736323411881" duration="10044000" />
-      <workItem from="1736408285959" duration="20720000" />
+      <workItem from="1736408285959" duration="34379000" />
     </task>
     <servers />
   </component>
@@ -208,15 +216,10 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="tree.TreeNode" memberName="right" />
         <PinnedItemInfo parentTag="backtracking.partition.restoreIpAddresses.Solution" memberName="ipNumber" />
         <PinnedItemInfo parentTag="backtracking.partition.restoreIpAddresses.Solution" memberName="res" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="subseq.get(subseq.size()-1)" language="JAVA" />
-        <watch expression="subseq.get(subseq.size()-2)" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

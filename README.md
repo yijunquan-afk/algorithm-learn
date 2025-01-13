@@ -117,17 +117,76 @@ for (int i = 0; i < nums.length; i++) {
 
 ### 二叉树的属性
 
-| 题目链接                                                     | 实现代码                                                  | 说明                                                         |
-| ------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ |
-| [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/) | [isSymmetric](src/tree/isSymmetric/Solution.java)         | 迭代法+递归法                                                |
-| [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/) | [invertTree](src/tree/invertTree/Solution.java)           |                                                              |
-| [559. N 叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/) | [maxDepth](src/tree/maxDepth/Solution.java)               |                                                              |
-| [222. 完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes/) | [countNodes](src/tree/countNodes/Solution.java)           | 可以利用满二叉树来简化复杂度为$\log_n\log_n$；[解析](https://programmercarl.com/0222.%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0.html#%E6%80%9D%E8%B7%AF) |
-| [110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) | [isBalanced](src/tree/isBalanced/Solution.java)           |                                                              |
-| [257. 二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/) | [binaryTreePaths](src/tree/binaryTreePaths/Solution.java) |                                                              |
-| [404. 左叶子之和](https://leetcode.cn/problems/sum-of-left-leaves/) | [sumOfLeftLeaves](src/tree/sumOfLeftLeaves/Solution.java) | 递归                                                         |
-| [513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/) |                                                           |                                                              |
-|                                                              |                                                           |                                                              |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/) | [isSymmetric](src/tree/isSymmetric/Solution.java)            | 迭代法+递归法                                                |
+| [559. N 叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/) | [maxDepth](src/tree/maxDepth/Solution.java)                  |                                                              |
+| [222. 完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes/) | [countNodes](src/tree/countNodes/Solution.java)              | 可以利用满二叉树来简化复杂度为$\log_n\log_n$；[解析](https://programmercarl.com/0222.%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0.html#%E6%80%9D%E8%B7%AF) |
+| [110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) | [isBalanced](src/tree/isBalanced/Solution.java)              |                                                              |
+| [257. 二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/) | [binaryTreePaths](src/tree/binaryTreePaths/Solution.java)    |                                                              |
+| [404. 左叶子之和](https://leetcode.cn/problems/sum-of-left-leaves/) | [sumOfLeftLeaves](src/tree/sumOfLeftLeaves/Solution.java)    | 递归                                                         |
+| [513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/) | [findBottomLeftValue](src/tree/findBottomLeftValue/Solution.java) | 迭代法(层序遍历) +递归法                                     |
+| [112. 路径总和](https://leetcode.cn/problems/path-sum/)      | [hasPathSum](src/tree/hasPathSum/Solution.java)              |                                                              |
+| [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/) | [pathsum](src/tree/pathsum/Solution.java)                    |                                                              |
+|                                                              |                                                              |                                                              |
+|                                                              |                                                              |                                                              |
+|                                                              |                                                              |                                                              |
+|                                                              |                                                              |                                                              |
+
+### 二叉树的修改与创建
+
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) |                                                              | 比较难：[思路1](https://programmercarl.com/0106.%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)、[思路2](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/426738/cong-zhong-xu-yu-hou-xu-bian-li-xu-lie-gou-zao-14/) |
+|                                                              |                                                              |                                                              |
+| [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) | [constructMaximumBinaryTree](src/tree/constructMaximumBinaryTree/Solution.java) | 尽量在原数组上操作                                           |
+|                                                              |                                                              |                                                              |
+| [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/) | [invertTree](src/tree/invertTree/Solution.java)              |                                                              |
+| [617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [mergeTrees](src/tree/mergeTrees/Solution.java)              |                                                              |
+
+
+
+### 二叉搜索树的属性
+
+| 题目链接                                                     | 实现代码                                            | 说明                                               |
+| ------------------------------------------------------------ | --------------------------------------------------- | -------------------------------------------------- |
+| [700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [searchBST](src/tree/bst/searchBST/Solution.java)   |                                                    |
+| [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) | [isValidBST](src/tree/bst/isValidBST/Solution.java) | 中序遍历下，输出的二叉搜索树节点的数值是有序序列。 |
+|                                                              |                                                     |                                                    |
+|                                                              |                                                     |                                                    |
+
+> 在二叉搜索树（BST）中，中序遍历的结果应该是一个严格递增的序列。这意味着在中序遍历过程中，每个节点的值都必须大于其前一个节点的值。如果在遍历过程中发现某个节点的值小于或等于其前一个节点的值，那么这棵树就不是二叉搜索树。
+>
+> ### 原因解释
+>
+> - **BST的性质**：在BST中，对于任意节点，其左子树中的所有节点值都小于该节点的值，其右子树中的所有节点值都大于该节点的值。因此，在中序遍历中，左子树的节点先于当前节点访问，右子树的节点后于当前节点访问。
+> - **中序遍历顺序**：中序遍历的顺序是先访问左子树，然后访问当前节点，最后访问右子树。因此，当我们访问当前节点时，上一个访问的节点是其左子树中的最大值，而当前节点的值必须大于这个最大值。
+> - **严格递增性**：如果当前节点的值小于或等于上一个节点的值，那么就违反了BST的性质，因为这意味着在中序遍历序列中出现了非严格递增的情况。
+>
+> ### 示例
+>
+> 假设我们有以下BST：
+>
+> ```text
+>     5
+>    / \
+>   3   8
+>  / \   \
+> 2   4   9
+> ```
+>
+> - 中序遍历的顺序是：2, 3, 4, 5, 8, 9。
+> - 在遍历过程中，每次访问一个节点时，我们只需要检查它是否大于上一个访问的节点：
+>   - 访问2时，没有前一个节点，继续。
+>   - 访问3时，3 > 2，继续。
+>   - 访问4时，4 > 3，继续。
+>   - 访问5时，5 > 4，继续。
+>   - 访问8时，8 > 5，继续。
+>   - 访问9时，9 > 8，继续。
+>
+> 如果在任何一步中，当前节点的值小于或等于上一个节点的值，则该树不是BST。
+>
+> 因此，只需要验证当前节点的值是否大于上一个节点的值，就可以确保中序遍历结果是严格递增的，从而验证该树是二叉搜索树。
 
 
 
@@ -210,3 +269,4 @@ void backtracking(参数) {
 
 
 
+记得改流量限制
