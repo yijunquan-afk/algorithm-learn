@@ -98,6 +98,8 @@ for (int i = 0; i < nums.length; i++) {
 2. **确定终止条件：** 写完了递归算法, 运行的时候，经常会遇到栈溢出的错误，就是没写终止条件或者终止条件写的不对，操作系统也是用一个栈的结构来保存每一层递归的信息，如果递归没有终止，操作系统的内存栈必然就会溢出。
 3. **确定单层递归的逻辑：** 确定每一层递归需要处理的信息。在这里也就会重复调用自己来实现递归的过程。
 
+
+
 ### 二叉树的遍历
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                     |
@@ -114,6 +116,8 @@ for (int i = 0; i < nums.length; i++) {
 | [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) | [connect](src/tree/traversal/connect/Solution.java)          |                                          |
 | [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) | [maxDepth](src/tree/traversal/maxDepth/Solution.java)        | 递归更好: `max(left, right) + 1`         |
 | [111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | [minDepth](src/tree/traversal/minDepth/Solution.java)        | 层次遍历找到叶子结点                     |
+
+
 
 ### 二叉树的属性
 
@@ -133,6 +137,8 @@ for (int i = 0; i < nums.length; i++) {
 |                                                              |                                                              |                                                              |
 |                                                              |                                                              |                                                              |
 
+
+
 ### 二叉树的修改与创建
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                                         |
@@ -143,6 +149,15 @@ for (int i = 0; i < nums.length; i++) {
 |                                                              |                                                              |                                                              |
 | [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/) | [invertTree](src/tree/invertTree/Solution.java)              |                                                              |
 | [617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [mergeTrees](src/tree/mergeTrees/Solution.java)              |                                                              |
+
+
+
+### 最近公共祖先
+
+| 题目链接                                                     | 实现代码                                                     | 说明         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ |
+| [236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowestCommonAncestor](src/tree/lca/lowestCommonAncestor/Solution.java) | 后序遍历     |
+| [235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [lowestCommonAncestor2](src/tree/lca/lowestCommonAncestor2/Solution.java) | 利用p<root<q |
 
 
 
@@ -188,6 +203,16 @@ for (int i = 0; i < nums.length; i++) {
 > 如果在任何一步中，当前节点的值小于或等于上一个节点的值，则该树不是BST。
 >
 > 因此，只需要验证当前节点的值是否大于上一个节点的值，就可以确保中序遍历结果是严格递增的，从而验证该树是二叉搜索树。
+
+
+
+### 二叉搜索树的修改与创建
+
+| 题目链接 | 实现代码 | 说明 |
+| -------- | -------- | ---- |
+|          |          |      |
+|          |          |      |
+|          |          |      |
 
 
 
