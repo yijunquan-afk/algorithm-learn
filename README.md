@@ -144,7 +144,7 @@ for (int i = 0; i < nums.length; i++) {
 | [513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/) | [findBottomLeftValue](src/tree/findBottomLeftValue/Solution.java) | 迭代法(层序遍历) +递归法                                     |          |
 | [112. 路径总和](https://leetcode.cn/problems/path-sum/)      | [hasPathSum](src/tree/hasPathSum/Solution.java)              |                                                              |          |
 | [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/) | [pathsum](src/tree/pathsum/Solution.java)                    |                                                              |          |
-|                                                              |                                                              |                                                              |          |
+| [543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) | [diameterOfBinaryTree](src/tree/diameterOfBinaryTree/Solution.java) | 记录每个节点左子树的深度+右子树的深度                        |          |
 |                                                              |                                                              |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 |                                                              |                                                              |                                                              |          |

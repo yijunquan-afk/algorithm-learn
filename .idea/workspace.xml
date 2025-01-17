@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/deleteNode/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/insertIntoBST/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/trimBST/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twopointers/moveZeroes/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zothers/singleNumber/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +107,7 @@
       <workItem from="1736323411881" duration="10044000" />
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
-      <workItem from="1737034071402" duration="643000" />
+      <workItem from="1737034071402" duration="1309000" />
     </task>
     <servers />
   </component>
@@ -204,6 +199,11 @@
           <url>file://$PROJECT_DIR$/src/tree/bst/findMode/Solution.java</url>
           <line>33</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/twopointers/moveZeroes/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
