@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/buildtree2/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/findContentChildren/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/wiggleMaxLength/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedlist/isPalindrome/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string/isPalindrome/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/buildTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/buildTree/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,7 @@
     "应用程序.AStackTest.executor": "Run",
     "应用程序.Main.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Run",
+    "应用程序.Solution.executor": "Debug",
     "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
     "应用程序.array.maxProfit2.Solution.executor": "Run",
@@ -110,7 +112,7 @@
       <workItem from="1736323411881" duration="10044000" />
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
-      <workItem from="1737034071402" duration="9905000" />
+      <workItem from="1737034071402" duration="17413000" />
     </task>
     <servers />
   </component>
@@ -215,11 +217,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/buildtree2/Solution.java</url>
-          <line>25</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="53" />
+          <line>42</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/greedy/wiggleMaxLength/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>

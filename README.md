@@ -312,8 +312,36 @@ void backtracking(参数) {
 | [491. 非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | [subsets](src/backtracking/subsets/subsets/Solution.java) | 去重逻辑有点特别 |
 |                                                              |                                                           |                  |
 
-### 
+
+
+## 贪心
+
+![image-20250121151425773](./assets/image-20250121151425773.png)
+
+### 简单题目
+
+| 题目链接                                                     | 实现代码                                                     | 说明 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) | [findContentChildren](src/greedy/findContentChildren/Solution.java) |      |
+|                                                              |                                                              |      |
 
 
 
-记得改流量限制
+### 序列问题
+
+| 题目链接                                                     | 实现代码                                                    | 说明                     |
+| ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------ |
+| [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) | [wiggleMaxLength](src/greedy/wiggleMaxLength/Solution.java) | 统计上升下降有多少次即可 |
+|                                                              |                                                             |                          |
+
+
+
+
+
+### 区间问题
+
+| 题目链接                                                | 实现代码                                    | 说明 |
+| ------------------------------------------------------- | ------------------------------------------- | ---- |
+| [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/) | [canJump](src/greedy/canJump/Solution.java) |      |
+|                                                         |                                             |      |
+
