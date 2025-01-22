@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/greedy/findContentChildren/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/greedy/wiggleMaxLength/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/isPalindrome/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/isPalindrome/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/combination/subarraySum/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/permute/generateParenthesis/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/jump/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -112,7 +111,7 @@
       <workItem from="1736323411881" duration="10044000" />
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
-      <workItem from="1737034071402" duration="17413000" />
+      <workItem from="1737034071402" duration="28906000" />
     </task>
     <servers />
   </component>
@@ -222,8 +221,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/greedy/wiggleMaxLength/Solution.java</url>
-          <line>15</line>
+          <line>18</line>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/backtracking/combination/subarraySum/Solution.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/greedy/jump/Solution.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
