@@ -323,7 +323,7 @@ void backtracking(参数) {
 | 题目链接                                                     | 实现代码                                                     | 说明 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) | [findContentChildren](src/greedy/findContentChildren/Solution.java) |      |
-|                                                              |                                                              |      |
+| [1005. K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | [largestSumAfterKNegations](src/greedy/largestSumAfterKNegations/Solution.java) |      |
 
 
 

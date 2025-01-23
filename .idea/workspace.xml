@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/backtracking/combination/subarraySum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backtracking/permute/generateParenthesis/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/greedy/jump/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/largestSumAfterKNegations/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,7 @@
     "应用程序.AStackTest.executor": "Run",
     "应用程序.Main.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Debug",
+    "应用程序.Solution.executor": "Run",
     "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
     "应用程序.array.maxProfit2.Solution.executor": "Run",
@@ -111,7 +108,7 @@
       <workItem from="1736323411881" duration="10044000" />
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
-      <workItem from="1737034071402" duration="28906000" />
+      <workItem from="1737034071402" duration="32960000" />
     </task>
     <servers />
   </component>
@@ -231,7 +228,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/greedy/jump/Solution.java</url>
-          <line>20</line>
+          <line>22</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
