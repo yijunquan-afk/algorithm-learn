@@ -340,8 +340,17 @@ void backtracking(参数) {
 
 ### 区间问题
 
-| 题目链接                                                     | 实现代码                                    | 说明 |
-| ------------------------------------------------------------ | ------------------------------------------- | ---- |
-| [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)      | [canJump](src/greedy/canJump/Solution.java) |      |
-| [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) | [jump](src/greedy/jump/Solution.java)       |      |
+| 题目链接                                                     | 实现代码                                                     | 说明 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)      | [canJump](src/greedy/canJump/Solution.java)                  |      |
+| [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) | [jump](src/greedy/jump/Solution.java)                        |      |
+| [134. 加油站](https://leetcode.cn/problems/gas-station/)     | [canCompleteCircuit](src/greedy/canCompleteCircuit/Solution.java) |      |
 
+
+
+## 其他题目
+
+| 题目链接                                             | 实现代码                                | 说明 |
+| ---------------------------------------------------- | --------------------------------------- | ---- |
+| [135. 分发糖果](https://leetcode.cn/problems/candy/) | [candy](src/greedy/candy/Solution.java) |      |
+|                                                      |                                         |      |
