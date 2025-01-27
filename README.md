@@ -350,7 +350,7 @@ void backtracking(参数) {
 
 ## 其他题目
 
-| 题目链接                                             | 实现代码                                | 说明 |
-| ---------------------------------------------------- | --------------------------------------- | ---- |
-| [135. 分发糖果](https://leetcode.cn/problems/candy/) | [candy](src/greedy/candy/Solution.java) |      |
-|                                                      |                                         |      |
+| 题目链接                                                     | 实现代码                                                     | 说明                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- |
+| [135. 分发糖果](https://leetcode.cn/problems/candy/)         | [candy](src/greedy/candy/Solution.java)                      | 两次遍历                                    |
+| [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | [reconstructQueue](src/greedy/reconstructQueue/Solution.java) | 身高从大到小排列，k从小到大插入，linkedlist |
