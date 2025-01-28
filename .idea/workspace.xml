@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/greedy/partitionLabels/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/merge/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +108,7 @@
       <workItem from="1736323411881" duration="10044000" />
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
-      <workItem from="1737034071402" duration="50114000" />
+      <workItem from="1737034071402" duration="51914000" />
     </task>
     <servers />
   </component>
@@ -253,13 +253,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/greedy/partitionLabels/Solution.java</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/greedy/partitionLabels/Solution.java</url>
-          <line>17</line>
+          <line>19</line>
           <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/greedy/merge/Solution.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
