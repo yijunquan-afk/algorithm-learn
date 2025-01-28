@@ -347,10 +347,11 @@ void backtracking(参数) {
 | [134. 加油站](https://leetcode.cn/problems/gas-station/)     | [canCompleteCircuit](src/greedy/canCompleteCircuit/Solution.java) |            |
 | [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) | [findMinArrowShots](src/greedy/findMinArrowShots/Solution.java) | 最小右边界 |
 | [435. 无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/) | [eraseOverlapIntervals](src/greedy/eraseOverlapIntervals/Solution.java) |            |
+| [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/) | [partitionLabels](src/greedy/partitionLabels/Solution.java)  |            |
 
 
 
-## 其他题目
+##  其他题目
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- |
