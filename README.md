@@ -329,10 +329,10 @@ void backtracking(参数) {
 
 ### 序列问题
 
-| 题目链接                                                     | 实现代码                                                    | 说明                     |
-| ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------ |
-| [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) | [wiggleMaxLength](src/greedy/wiggleMaxLength/Solution.java) | 统计上升下降有多少次即可 |
-|                                                              |                                                             |                          |
+| 题目链接                                                     | 实现代码                                                     | 说明                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------ |
+| [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) | [wiggleMaxLength](src/greedy/wiggleMaxLength/Solution.java)  | 统计上升下降有多少次即可 |
+| [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/) | [monotoneIncreasingDigits](src/greedy/monotoneIncreasingDigits/Solution.java) | 注意使用`nineFlag`       |
 
 
 
