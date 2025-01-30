@@ -358,3 +358,35 @@ void backtracking(参数) {
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- |
 | [135. 分发糖果](https://leetcode.cn/problems/candy/)         | [candy](src/greedy/candy/Solution.java)                      | 两次遍历                                    |
 | [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | [reconstructQueue](src/greedy/reconstructQueue/Solution.java) | 身高从大到小排列，k从小到大插入，linkedlist |
+
+
+
+## 动态规划
+
+动态规划五步骤
+
+1. 确定dp数组（dp table）以及下标的含义
+2. 确定递推公式
+3. dp数组如何初始化
+4. 确定遍历顺序
+5. 举例推导dp数组
+
+### 基础题目
+
+| 题目链接                                                     | 实现代码                              | 说明 |
+| ------------------------------------------------------------ | ------------------------------------- | ---- |
+| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java) |      |
+|                                                              |                                       |      |
+
+
+
+
+
+### 背包问题
+
+
+
+
+
+### 序列问题
+
