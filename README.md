@@ -373,10 +373,10 @@ void backtracking(参数) {
 
 ### 基础题目
 
-| 题目链接                                                     | 实现代码                              | 说明 |
-| ------------------------------------------------------------ | ------------------------------------- | ---- |
-| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java) |      |
-|                                                              |                                       |      |
+| 题目链接                                                     | 实现代码                                              | 说明 |
+| ------------------------------------------------------------ | ----------------------------------------------------- | ---- |
+| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java)                 |      |
+| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)  | [climbStairs](src/dp/basic/climbStairs/Solution.java) |      |
 
 
 
