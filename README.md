@@ -373,13 +373,16 @@ void backtracking(参数) {
 
 ### 基础题目
 
-| 题目链接                                                     | 实现代码                                                     | 说明 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java)                        |      |
-| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)  | [climbStairs](src/dp/basic/climbStairs/Solution.java)        |      |
-| [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | [minCostClimbingStairs](src/dp/basic/minCostClimbingStairs/Solution.java) |      |
-| [62. 不同路径](https://leetcode.cn/problems/unique-paths/)   | [uniquePaths](src/dp/basic/uniquePaths/Solution.java)        |      |
-| [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | [uniquePathsWithObstacles](src/dp/basic/uniquePathsWithObstacles/Solution.java) |      |
+| 题目链接                                                     | 实现代码                                                     | 说明                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------- |
+| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java)                        |                                   |
+| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)  | [climbStairs](src/dp/basic/climbStairs/Solution.java)        |                                   |
+| [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | [minCostClimbingStairs](src/dp/basic/minCostClimbingStairs/Solution.java) |                                   |
+| [62. 不同路径](https://leetcode.cn/problems/unique-paths/)   | [uniquePaths](src/dp/basic/uniquePaths/Solution.java)        |                                   |
+| [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | [uniquePathsWithObstacles](src/dp/basic/uniquePathsWithObstacles/Solution.java) |                                   |
+| [343. 整数拆分](https://leetcode.cn/problems/integer-break/) |                                                              |                                   |
+| [96. 不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/) | [numTrees](src/dp/basic/numTrees/Solution.java)              | `dp[i] += dp[j - 1] * dp[i - j];` |
+|                                                              |                                                              |                                   |
 
 
 
