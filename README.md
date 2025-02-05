@@ -395,7 +395,7 @@ void backtracking(参数) {
 | 题目链接                                                     | 实现代码                                                     | 说明                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | [canPartition](src/dp/backpack/onezero/canPartition/Solution.java) | 物品是`nums[i]`，重量是`nums[i]`，价值也是`nums[i]`，背包体积是`sum/2`。 |
-|                                                              |                                                              |                                                              |
+| [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/) | [lastStoneWeightII](src/dp/backpack/onezero/lastStoneWeightII/Solution.java) | 尽可能分成两半                                               |
 
 
 

@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dp/basic/fib/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/backpack/onezero/lastStoneWeightII/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,42 +35,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.AQueueTest.executor": "Run",
-    "应用程序.AStackTest.executor": "Run",
-    "应用程序.Main.executor": "Run",
-    "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Run",
-    "应用程序.array.isPalindrome.Solution.executor": "Run",
-    "应用程序.array.maxProfit.Solution.executor": "Run",
-    "应用程序.array.maxProfit2.Solution.executor": "Run",
-    "应用程序.array.rotate.Solution.executor": "Debug",
-    "应用程序.backtracking.combination.combinationSum.Solution.executor": "Run",
-    "应用程序.backtracking.combination.combinationSum2.Solution.executor": "Run",
-    "应用程序.backtracking.combination.combinationSum3.Solution.executor": "Run",
-    "应用程序.backtracking.combination.combine.Solution.executor": "Run",
-    "应用程序.backtracking.combination.letterCombinations.Solution.executor": "Run",
-    "应用程序.backtracking.partition.partition.Solution.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AQueueTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.AStackTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.MyQueue.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.array.isPalindrome.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.array.maxProfit.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.array.maxProfit2.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.array.rotate.Solution.executor&quot;: &quot;Debug&quot;,
+    &quot;应用程序.backtracking.combination.combinationSum.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.backtracking.combination.combinationSum2.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.backtracking.combination.combinationSum3.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.backtracking.combination.combine.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.backtracking.combination.letterCombinations.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.backtracking.partition.partition.Solution.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="array" />
@@ -108,7 +108,8 @@
       <workItem from="1736323411881" duration="10044000" />
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
-      <workItem from="1737034071402" duration="55705000" />
+      <workItem from="1737034071402" duration="64747000" />
+      <workItem from="1738758221174" duration="1268000" />
     </task>
     <servers />
   </component>
@@ -265,6 +266,21 @@
           <url>file://$PROJECT_DIR$/src/greedy/merge/Solution.java</url>
           <line>21</line>
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/basic/fib/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/backpack/onezero/lastStoneWeightII/Solution.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/backpack/onezero/lastStoneWeightII/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
