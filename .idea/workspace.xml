@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dp/backpack/onezero/lastStoneWeightII/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/backpack/onezero/findMaxForm/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/backpack/onezero/findTargetSumWays/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
       <workItem from="1736408285959" duration="38528000" />
       <workItem from="1736770534924" duration="17151000" />
       <workItem from="1737034071402" duration="64747000" />
-      <workItem from="1738758221174" duration="1268000" />
+      <workItem from="1738758221174" duration="6044000" />
     </task>
     <servers />
   </component>
