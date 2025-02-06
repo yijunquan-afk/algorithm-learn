@@ -1,4 +1,4 @@
-package twopointers.moveZeroes;
+package doublepointers.moveZeroes;
 
 import java.util.Arrays;
 
