@@ -404,7 +404,16 @@ void backtracking(参数) {
 | [474. 一和零](https://leetcode.cn/problems/ones-and-zeroes/) | [findMaxForm](src/dp/backpack/onezero/findMaxForm/Solution.java) | 两个维度: `dp[i][j] = max(dp[i][j], dp[i - zeroNum][j - oneNum] + 1);` |
 |                                                              |                                                              |                                                              |
 
+#### 完全背包
 
+一维dp：内循环正序
+
+| 题目链接                                                     | 实现代码                                                     | 说明                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------- |
+| [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) | [chang2](src/dp/backpack/complete/chang2/Solution.java)      | 组合问题，先遍历物品，再遍历背包 |
+| [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [combinationSum4](dp/backpack/complete/combinationSum4/Solution.java) | 排列问题，先遍历背包，再遍历物品 |
+| [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)   | [chang](src/dp/backpack/complete/chang/Solution.java)        | 求的是最少数，遍历顺序无所谓     |
+| [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [numSquares](src/dp/backpack/complete/numSquares/Solution.java) | 同上                             |
 
 
 
