@@ -11,7 +11,7 @@
 | [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [maxProfit](src/array/maxProfit/Solution.java)               | 记录历史最小值，当前的减去其                                 |          |
 | [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [maxProfit](src/array/maxProfit2/Solution.java)              | 把所有递增的买上就行                                         |          |
 | [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/) | [isPalindrome](src/array/isPalindrome/Solution.java)         | 双指针                                                       |          |
-|                                                              |                                                              |                                                              |          |
+| [274. H 指数](https://leetcode.cn/problems/h-index/)         | [hIndex](src/array/hIndex/Solution.java)                     |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 
 
@@ -414,6 +414,22 @@ void backtracking(参数) {
 | [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [combinationSum4](dp/backpack/complete/combinationSum4/Solution.java) | 排列问题，先遍历背包，再遍历物品 |
 | [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)   | [chang](src/dp/backpack/complete/chang/Solution.java)        | 求的是最少数，遍历顺序无所谓     |
 | [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [numSquares](src/dp/backpack/complete/numSquares/Solution.java) | 同上                             |
+| [139. 单词拆分](https://leetcode.cn/problems/word-break/)    |                                                              |                                  |
+
+
+
+### 打家劫舍
+
+| 题目链接                                                     | 实现代码                              | 说明                                            |
+| ------------------------------------------------------------ | ------------------------------------- | ----------------------------------------------- |
+| [198. 打家劫舍](https://leetcode.cn/problems/house-robber/)  | [rob](src/dp/rob/rob/Solution.java)   | `dp[i] = Math.max(dp[i-1], dp[i-2] + nums[i]);` |
+| [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | [rob2](src/dp/rob/rob2/Solution.java) | 两种情况：去掉第一个房子，去掉最后一个房子      |
+| [337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/) | [rob3](src/dp/rob/rob3/Solution.java) | ==树形dp==                                      |
+|                                                              |                                       |                                                 |
+
+
+
+### 股票问题
 
 
 
