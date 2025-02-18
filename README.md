@@ -431,6 +431,13 @@ void backtracking(参数) {
 
 ### 股票问题
 
+| 题目链接                                                     | 实现代码                                                | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------ |
+| [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [maxProfit1](src/dp/maxProfit/maxProfit/Solution.java)  | `dp[i][0] = max(dp[i-1][0], -prices[i]); `<br />`dp[i][1] = max(dp[i-1][1], dp[i-1][0] + prices[i])` |
+| [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [maxProfit2](src/dp/maxProfit/maxProfit2/Solution.java) | `dp[i][0] = max(dp[i-1][0], dp[i-1][1]-prices[i]); `<br />`dp[i][1] = max(dp[i-1][1], dp[i-1][0] + prices[i])` |
+| [337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/) | [maxProfit3](src/dp/maxProfit/maxProfit3/Solution.java) |                                                              |
+|                                                              |                                                         |                                                              |
+
 
 
 ### 序列问题
