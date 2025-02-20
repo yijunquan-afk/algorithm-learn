@@ -444,6 +444,11 @@ void backtracking(参数) {
 
 ### 序列问题
 
-| 题目链接                                                     | 实现代码                                               | 说明                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
-| [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [maxProfit1](src/dp/maxProfit/maxProfit/Solution.java) | 买卖一次<br />`dp[i][0] = max(dp[i-1][0], -prices[i]); `<br />`dp[i][1] = max(dp[i-1][1], dp[i-1][0] + prices[i])` |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [lengthOfLIS](src/dp/sequence/lengthOfLIS/Solution.java)     | $dp[i] = \max dp[j], 0\le j\le i\ \& \ nums[j]<nums[i]$$LIS_{length} = max(dp[i]),0\le i\le n$ |
+| [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) | [findLengthOfLCIS](src/dp/sequence/findLengthOfLCIS/Solution.java) |                                                              |
+| [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | [findLength](src/dp/sequence/findLength/Solution.java)       | $dp[i][j]$                                                   |
+| [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | [lcs](src/dp/sequence/lcs/Solution.java)                     | $$dp[i][j] = \begin{cases}dp[i-1][j-1] + 1, &  \\\max(dp[i-1][j], dp[i][j-1]), \end{cases}$$ |
+|                                                              |                                                              |                                                              |
+
