@@ -450,5 +450,13 @@ void backtracking(参数) {
 | [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) | [findLengthOfLCIS](src/dp/sequence/findLengthOfLCIS/Solution.java) |                                                              |
 | [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | [findLength](src/dp/sequence/findLength/Solution.java)       | $dp[i][j]$                                                   |
 | [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | [lcs](src/dp/sequence/lcs/Solution.java)                     | $$dp[i][j] = \begin{cases}dp[i-1][j-1] + 1, &  \\\max(dp[i-1][j], dp[i][j-1]), \end{cases}$$ |
+| [1035. 不相交的线](https://leetcode.cn/problems/uncrossed-lines/) | [maxUncrossedLines](src/dp/sequence/maxUncrossedLines/Solution.java) | 跟最长公共子序列问题一致                                     |
+| [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | [maxSubArray](src/dp/sequence/maxSubArray/Solution.java)     | 贪心算法/dp<br />$dp[i] = \max(dp[i-1] + nums[i], nums[i]);$ |
+| [392. 判断子序列](https://leetcode.cn/problems/is-subsequence/) | [isSubsequence](src/dp/sequence/isSubsequence/Solution.java) | 跟最长公共子序列问题类似，$dp[i][j] = dp[i][j-1]$<br />也可以使用双指针 |
+| [115. 不同的子序列](https://leetcode.cn/problems/distinct-subsequences/) | [numDistinct](src/dp/sequence/numDistinct/Solution.java)     | ==hard==, $dp[i][j] = dp[i-1][j-1] + dp[i-1][j];$            |
+| [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/) | [minDistance](src/dp/minDistance/lcs/Solution.java)          | 跟最长公共子序列问题一致, $n + m - 2*dp[n][m];$              |
+| [72. 编辑距离](https://leetcode.cn/problems/edit-distance/)  | [minDistance2](src/dp/sequence/minDistance2/Solution.java)   | [思路](https://programmercarl.com/0072.%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.html#%E6%80%9D%E8%B7%AF) |
+| [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |                                                              |                                                              |
+|                                                              |                                                              |                                                              |
 |                                                              |                                                              |                                                              |
 
