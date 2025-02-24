@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dp/sequence/isSubsequence/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/sequence/maxSubArray/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/sequence/maxUncrossedLines/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/sequence/numDistinct/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/backpack/complete/wordBreak/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/others/maxProduct/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/others/minPathSum/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/dfs/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/dfs/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/backpack/complete/chang/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/sequence/countSubstrings/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/sequence/countSubstrings/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/sequence/findLengthOfLCIS/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/sequence/findLengthOfLCIS/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +120,8 @@
       <workItem from="1738758221174" duration="18356000" />
       <workItem from="1738919613014" duration="2377000" />
       <workItem from="1739795991062" duration="20125000" />
-      <workItem from="1740044411629" duration="17193000" />
+      <workItem from="1740044411629" duration="24922000" />
+      <workItem from="1740193182476" duration="15960000" />
     </task>
     <servers />
   </component>
@@ -299,7 +305,7 @@
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dp/backpack/complete/chang/Solution.java</url>
+          <url>file://$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java</url>
           <line>18</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -317,6 +323,16 @@
           <url>file://$PROJECT_DIR$/src/dp/sequence/lengthOfLIS/Solution.java</url>
           <line>20</line>
           <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/sequence/numDistinct/Solution.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/others/minPathSum/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
@@ -345,5 +361,10 @@
         <PinnedItemInfo parentTag="backtracking.partition.restoreIpAddresses.Solution" memberName="res" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="dp[2]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

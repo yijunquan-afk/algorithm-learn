@@ -10,7 +10,7 @@ package dp.sequence.countSubstrings;
  */
 public class Solution {
     // [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/)
-    public int countSubstrings(String s) {
-
-    }
+//    public int countSubstrings(String s) {
+//
+//    }
 }

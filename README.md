@@ -76,7 +76,7 @@ for (int i = 0; i < nums.length; i++) {
 | 题目链接                                               | 代码                                                   | 说明 | 刷题次数 |
 |----------------------------------------------------|------------------------------------------------------| ---- | ---- |
 | [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [finalPrices](src/stackqueue/finalPrices/Solution.java) | 注意从后往前遍历 |  |
-| [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](src/stackqueue/dailyTemperatures/Solution.java) | 注意等于号 |  |
+| [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](src/stackqueue/dailyTemperatures/Solution.java) | 注意等于号 | 2 |
 | [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](src/stackqueue/nextGreaterElement/Solution.java) |      |      |
 | [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](src/stackqueue/nextGreaterElements/Solution.java)|用取模代替数组复制||
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈||
@@ -356,7 +356,7 @@ void backtracking(参数) {
 
 
 
-##  其他题目
+### 其他题目
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- |
@@ -388,10 +388,6 @@ void backtracking(参数) {
 | [96. 不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/) | [numTrees](src/dp/basic/numTrees/Solution.java)              | `dp[i] += dp[j - 1] * dp[i - j];` |
 |                                                              |                                                              |                                   |
 
-
-
-
-
 ### 背包问题
 
 #### 0-1背包
@@ -408,13 +404,13 @@ void backtracking(参数) {
 
 一维dp：内循环正序
 
-| 题目链接                                                     | 实现代码                                                     | 说明                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------- |
-| [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) | [chang2](src/dp/backpack/complete/chang2/Solution.java)      | 组合问题，先遍历物品，再遍历背包 |
-| [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [combinationSum4](dp/backpack/complete/combinationSum4/Solution.java) | 排列问题，先遍历背包，再遍历物品 |
-| [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)   | [chang](src/dp/backpack/complete/chang/Solution.java)        | 求的是最少数，遍历顺序无所谓     |
-| [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [numSquares](src/dp/backpack/complete/numSquares/Solution.java) | 同上                             |
-| [139. 单词拆分](https://leetcode.cn/problems/word-break/)    |                                                              |                                  |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) | [change2](src/dp/backpack/complete/change2/Solution.java)    | 组合问题，先遍历物品，再遍历背包                             |
+| [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [combinationSum4](dp/backpack/complete/combinationSum4/Solution.java) | 排列问题，先遍历背包，再遍历物品                             |
+| [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)   | [change](src/dp/backpack/complete/change/Solution.java)      | 求的是最少数，遍历顺序无所谓                                 |
+| [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [numSquares](src/dp/backpack/complete/numSquares/Solution.java) | 同上                                                         |
+| [139. 单词拆分](https://leetcode.cn/problems/word-break/)    | [wordBreak](src/dp/backpack/complete/wordBreak/Solution.java) | 排列问题，先遍历背包，再遍历物品<br />递推公式是 if([j, i] 这个区间的子串出现在字典里 && dp[j]是true) 那么 dp[i] = true。 |
 
 
 
@@ -457,6 +453,23 @@ void backtracking(参数) {
 | [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/) | [minDistance](src/dp/minDistance/lcs/Solution.java)          | 跟最长公共子序列问题一致, $n + m - 2*dp[n][m];$              |
 | [72. 编辑距离](https://leetcode.cn/problems/edit-distance/)  | [minDistance2](src/dp/sequence/minDistance2/Solution.java)   | [思路](https://programmercarl.com/0072.%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.html#%E6%80%9D%E8%B7%AF) |
 | [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |                                                              |                                                              |
-|                                                              |                                                              |                                                              |
+| [516. 最长回文子序列](https://leetcode.cn/problems/longest-palindromic-subsequence/) |                                                              |                                                              |
 |                                                              |                                                              |                                                              |
 
+### 其他
+
+| 题目链接                                                     | 实现代码                                             | 说明                                         |
+| ------------------------------------------------------------ | ---------------------------------------------------- | -------------------------------------------- |
+| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | [maxProduct](src/dp/others/maxProduct/Solution.java) | 同时记录最大乘积和最小乘积，关键在于<0时交换 |
+|                                                              |                                                      |                                              |
+
+
+
+## 图论
+
+### DFS & BFS
+
+| 题目链接                                                     | 实现代码                                             | 说明                                         |
+| ------------------------------------------------------------ | ---------------------------------------------------- | -------------------------------------------- |
+| [152. 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/) | [maxProduct](src/dp/others/maxProduct/Solution.java) | 同时记录最大乘积和最小乘积，关键在于<0时交换 |
+| 所有可达路径                                                 |                                                      |                                              |

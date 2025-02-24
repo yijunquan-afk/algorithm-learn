@@ -1,4 +1,4 @@
-package dp.backpack.complete.chang;
+package dp.backpack.complete.change;
 
 import java.util.Arrays;
 
