@@ -1,4 +1,4 @@
-package graph.dfs;
+package graph.dfsbfs;
 
 /**
  * ClassName:Main

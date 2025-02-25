@@ -460,7 +460,7 @@ void backtracking(参数) {
 
 | 题目链接                                                     | 实现代码                                             | 说明                                         |
 | ------------------------------------------------------------ | ---------------------------------------------------- | -------------------------------------------- |
-| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | [maxProduct](src/dp/others/maxProduct/Solution.java) | 同时记录最大乘积和最小乘积，关键在于<0时交换 |
+| [152. 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/) | [maxProduct](src/dp/others/maxProduct/Solution.java) | 同时记录最大乘积和最小乘积，关键在于<0时交换 |
 |                                                              |                                                      |                                              |
 
 
@@ -469,7 +469,39 @@ void backtracking(参数) {
 
 ### DFS & BFS
 
-| 题目链接                                                     | 实现代码                                             | 说明                                         |
-| ------------------------------------------------------------ | ---------------------------------------------------- | -------------------------------------------- |
-| [152. 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/) | [maxProduct](src/dp/others/maxProduct/Solution.java) | 同时记录最大乘积和最小乘积，关键在于<0时交换 |
-| 所有可达路径                                                 |                                                      |                                              |
+| 题目链接                                                     | 实现代码             | 说明                                                         |
+| ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ |
+| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | [dfs](src/graph/dfsbfs) |                                                              |
+| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](src/graph/dfsbfs/islandnum/dfs.java) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 |
+| [99. 岛屿数量-bfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-bfs](src/graph/dfsbfs/islandnum/bfs.java) | 加入队列 就代表走过，立刻标记 |
+| [100.岛屿的最大面积](https://kamacoder.com/problempage.php?pid=1172) | [islandArea](src/graph/dfsbfs/islandArea/Main.java) | 遇到一个岛屿count++ |
+| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](src/graph/dfsbfs/islandTotalArea/Main.java) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 |
+| [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  |  |
+| [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](src/graph/dfsbfs/islandDown/Main.java) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 |
+| [103.水流问题](https://kamacoder.com/problempage.php?pid=1175) | [flow](src/graph/dfsbfs/flow/Main.java) | 从两个边界逆流而上，都经历过的标记上，时间复杂度为$O(mn)$ |
+
+
+
+### 并查集
+
+| 题目链接                                                     | 实现代码                                             | 说明                                                         |
+| ------------------------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ |
+| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | [dfs](src/graph/dfsbfs)                              |                                                              |
+| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](src/graph/dfsbfs/islandnum/dfs.java) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 |
+
+
+
+### 最小生成树
+
+
+
+
+
+### 拓扑排序
+
+
+
+
+
+### 最短路算法
+
