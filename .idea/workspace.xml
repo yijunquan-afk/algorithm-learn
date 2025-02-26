@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/dfsbfs/flow/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/dfsbfs/islandArea/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/dfsbfs/islandDown/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/dfsbfs/islandTotalArea/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/dfsbfs/islandnum/bfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/dfsbfs/islandnum/dfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchInsert/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchRange/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/dfs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/dfsbfs/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/dfs/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/dfsbfs/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/binarysearch/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/dfsbfs/flow/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/dfsbfs/flow/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +63,7 @@
     "应用程序.AStackTest.executor": "Run",
     "应用程序.Main.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Run",
+    "应用程序.Solution.executor": "Debug",
     "应用程序.Test.executor": "Run",
     "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
@@ -124,7 +120,8 @@
       <workItem from="1738919613014" duration="2377000" />
       <workItem from="1739795991062" duration="20125000" />
       <workItem from="1740044411629" duration="24922000" />
-      <workItem from="1740193182476" duration="23207000" />
+      <workItem from="1740193182476" duration="24905000" />
+      <workItem from="1740560543509" duration="3505000" />
     </task>
     <servers />
   </component>
@@ -137,11 +134,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/binarysearch/Solution.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/spiralmatrix2/Solution.java</url>
           <line>39</line>
@@ -336,6 +328,11 @@
           <url>file://$PROJECT_DIR$/src/dp/others/minPathSum/Solution.java</url>
           <line>27</line>
           <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/binarysearch/Solution.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>

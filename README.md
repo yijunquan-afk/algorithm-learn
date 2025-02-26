@@ -14,6 +14,16 @@
 | [274. H 指数](https://leetcode.cn/problems/h-index/)         | [hIndex](src/array/hIndex/Solution.java)                     |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 
+## 二分查找
+
+| 题目链接                                                     | 代码                                                         | 说明                                           | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------- | -------- |
+| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [binarysearch](src/array/binarysearch/Solution.java)         |                                                | 2        |
+| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](src/array/binarysearch/searchInsert/Solution.java) | `return left;`                                 |          |
+| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](src/array/binarysearch/searchRange/Solution.java) | 两遍二分查找，分别找到最左边和最右边的target位 |          |
+
+
+
 
 
 ## 双指针
@@ -77,8 +87,8 @@ for (int i = 0; i < nums.length; i++) {
 |----------------------------------------------------|------------------------------------------------------| ---- | ---- |
 | [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [finalPrices](src/stackqueue/finalPrices/Solution.java) | 注意从后往前遍历 |  |
 | [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](src/stackqueue/dailyTemperatures/Solution.java) | 注意等于号 | 2 |
-| [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](src/stackqueue/nextGreaterElement/Solution.java) |      |      |
-| [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](src/stackqueue/nextGreaterElements/Solution.java)|用取模代替数组复制||
+| [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](src/stackqueue/nextGreaterElement/Solution.java) |      | 2 |
+| [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](src/stackqueue/nextGreaterElements/Solution.java)|用取模代替数组复制|2|
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈||
 | [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) ||==十分经典==，后面再看看||
 
@@ -505,3 +515,4 @@ void backtracking(参数) {
 
 ### 最短路算法
 
+企业真题

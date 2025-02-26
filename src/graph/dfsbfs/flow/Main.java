@@ -8,6 +8,7 @@ package graph.dfsbfs.flow;
  * @date:2025/2/25 20:23
  * @author: Junquan Yi
  */
+import java.util.HashMap;
 import java.util.Scanner;
 
 class Main{

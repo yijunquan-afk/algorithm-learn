@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * ClassName:Test
@@ -16,5 +17,7 @@ public class Test {
         int[] arr = new int[]{0,1,1,2};
         changeArray(arr);
         System.out.println(Arrays.toString(arr));
+        HashMap<Character, Character> map = new HashMap<>();
+        System.out.println(map.get('1'));
     }
 }
