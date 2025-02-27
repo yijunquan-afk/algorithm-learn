@@ -21,6 +21,10 @@
 | [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [binarysearch](src/array/binarysearch/Solution.java)         |                                                | 2        |
 | [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](src/array/binarysearch/searchInsert/Solution.java) | `return left;`                                 |          |
 | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](src/array/binarysearch/searchRange/Solution.java) | 两遍二分查找，分别找到最左边和最右边的target位 |          |
+| [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)       | [mySqrt](src/array/binarysearch/mySqrt/Solution.java)        | `(long) mid * mid`                             |          |
+| [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) |                                                              | 同上                                           |          |
+| [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [searchRotate](src/array/binarysearch/searchRotate/Solution.java) | `nums[0] <= nums[mid]`左边有序                 |          |
+| [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [searchRotate2](src/array/binarysearch/searchRotate2/Solution.java) | 注意`left=mid,left++`，`mid=right,right--`     |          |
 
 
 

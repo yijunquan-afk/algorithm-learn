@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchInsert/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchRange/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/mySqrt/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchRotate/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchRotate2/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/binarysearch/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/dfsbfs/flow/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/dfsbfs/flow/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
     "应用程序.AStackTest.executor": "Run",
     "应用程序.Main.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Debug",
+    "应用程序.Solution.executor": "Run",
     "应用程序.Test.executor": "Run",
     "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
@@ -121,7 +119,7 @@
       <workItem from="1739795991062" duration="20125000" />
       <workItem from="1740044411629" duration="24922000" />
       <workItem from="1740193182476" duration="24905000" />
-      <workItem from="1740560543509" duration="3505000" />
+      <workItem from="1740560543509" duration="8458000" />
     </task>
     <servers />
   </component>
@@ -334,6 +332,11 @@
           <line>16</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/binarysearch/searchRotate/Solution.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
           <line>17</line>
@@ -361,10 +364,5 @@
         <PinnedItemInfo parentTag="backtracking.partition.restoreIpAddresses.Solution" memberName="res" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="dp[2]" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
