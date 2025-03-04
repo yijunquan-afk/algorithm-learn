@@ -28,6 +28,21 @@
 
 
 
+## 链表
+
+| 题目链接                                                     | 代码                                                         | 说明                                                     | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- | -------- |
+| [203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/) | [removenode](src/linkedlist/removenode)                      |                                                          | 2        |
+| [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [getintersectionnode](src/linkedlist/getintersectionnode/Solution.java) | 解法1:  哈希表<br />解法2: 长对齐+双指针                 | 2        |
+| [707. 设计链表](https://leetcode.cn/problems/design-linked-list/) | [designlinkedlist](src/linkedlist/designlinkedlist)          |                                                          | 2        |
+| [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [reverselist](src/linkedlist/reverselist/Solution.java)      | 使用`prev`和`cur`双指针<br />==多做几遍==                | 2        |
+| [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](src/linkedlist/isPalindrome/Solution.java)    | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较 |          |
+|                                                              |                                                              |                                                          |          |
+|                                                              |                                                              |                                                          |          |
+|                                                              |                                                              |                                                          |          |
+
+
+
 
 
 ## 双指针
@@ -47,6 +62,14 @@
 
 
 ## 哈希表
+
+| 题目链接                                                     | 代码                                                | 说明 | 刷题次数 |
+| ------------------------------------------------------------ | --------------------------------------------------- | ---- | -------- |
+| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                                      |      |          |
+| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](src/doublepointers/maxArea/Solution.java) |      |          |
+|                                                              |                                                     |      |          |
+
+
 
 
 
@@ -481,6 +504,12 @@ void backtracking(参数) {
 
 ## 图论
 
+| 题目链接                                                     | 实现代码                                       | 说明                           |
+| ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------ |
+| [106. 岛屿的周长](https://kamacoder.com/problempage.php?pid=1178) | [islandRound](src/graph/islandRound/Main.java) | 直接模拟，遇到水和边界，边数+1 |
+
+
+
 ### DFS & BFS
 
 | 题目链接                                                     | 实现代码             | 说明                                                         |
@@ -493,15 +522,19 @@ void backtracking(参数) {
 | [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  |  |
 | [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](src/graph/dfsbfs/islandDown/Main.java) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 |
 | [103.水流问题](https://kamacoder.com/problempage.php?pid=1175) | [flow](src/graph/dfsbfs/flow/Main.java) | 从两个边界逆流而上，都经历过的标记上，时间复杂度为$O(mn)$ |
+| [110.字符串接龙](https://kamacoder.com/problempage.php?pid=1183) |  | ==hard== **无向图求最短路，广搜最为合适，广搜只要搜到了终点，那么一定是最短的路径**。因为广搜就是以起点中心向四周扩散的搜索。 |
+| [104.建造最大岛屿](https://kamacoder.com/problempage.php?pid=1176) |  |  |
+|  |  |  |
+|  |  |  |
 
 
 
 ### 并查集
 
-| 题目链接                                                     | 实现代码                                             | 说明                                                         |
-| ------------------------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ |
-| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | [dfs](src/graph/dfsbfs)                              |                                                              |
-| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](src/graph/dfsbfs/islandnum/dfs.java) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 |
+| 题目链接 | 实现代码 | 说明 |
+| -------- | -------- | ---- |
+|          |          |      |
+|          |          |      |
 
 
 
