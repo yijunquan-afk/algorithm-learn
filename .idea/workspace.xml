@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/addTwoNumbers/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/hasCycle/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/mergeTwoLists/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedlist/LRUCache/LRUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedlist/insertionSortList/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedlist/reverseKGroup/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedlist/sortList/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/mergeTwoLists/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/mergeTwoLists/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +121,7 @@
       <workItem from="1739795991062" duration="20125000" />
       <workItem from="1740044411629" duration="24922000" />
       <workItem from="1740193182476" duration="24905000" />
-      <workItem from="1740560543509" duration="30507000" />
+      <workItem from="1740560543509" duration="39916000" />
     </task>
     <servers />
   </component>
@@ -341,6 +343,19 @@
           <url>file://$PROJECT_DIR$/src/linkedlist/isPalindrome/Solution.java</url>
           <line>57</line>
           <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/sortList/Solution.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/sortList/Solution.java</url>
+          <line>18</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>

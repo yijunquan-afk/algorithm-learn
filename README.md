@@ -46,6 +46,11 @@
 | [19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [removeNthFromEnd](src/linkedlist/removeNthFromEnd/Solution.java) | 虚拟头节点+快慢指针，快指针一直走，满指针等n减少为0再走，这样快指针到达尾时慢指针到达了倒数第n | 2        |
 | [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) | [swappairs](src/linkedlist/swappairs/Solution.java)          | 设置虚拟头节点                                               | 2        |
 | [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/) |                                                              | 1、哈希表记录<br />2、链表拼接与拆分                         |          |
+| [147. 对链表进行插入排序](https://leetcode.cn/problems/insertion-sort-list/) | [insertionSortList](src/linkedlist/insertionSortList/Solution.java) | 设置dummy，方便插入head之前                                  |          |
+| [148. 排序链表](https://leetcode.cn/problems/sort-list/)     | [sortList](src/linkedlist/sortList/Solution.java)            | 归并排序+合并两个有序链表，递归比较好理解，但是空间复杂度比较高。==比较有价值== |          |
+| [146. LRU 缓存](https://leetcode.cn/problems/lru-cache/)     | [LRUCache](src/linkedlist/LRUCache/LRUCache.java)            | ==比较有价值==：哈希表+双向链表<br />虚拟头节点+虚拟尾节点，put时放入头，超出容量删除尾 |          |
+| [25. K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | [reverseKGroup](src/linkedlist/reverseKGroup/Solution.java)  | ==困难==，和反转链表类似，注意需要拼接                       |          |
+|                                                              |                                                              |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 
