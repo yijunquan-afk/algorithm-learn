@@ -18,15 +18,17 @@
 
 ## 二分查找
 
-| 题目链接                                                     | 代码                                                         | 说明                                           | 刷题次数 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------- | -------- |
-| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [binarysearch](src/array/binarysearch/Solution.java)         |                                                | 2        |
-| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](src/array/binarysearch/searchInsert/Solution.java) | `return left;`                                 |          |
-| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](src/array/binarysearch/searchRange/Solution.java) | 两遍二分查找，分别找到最左边和最右边的target位 |          |
-| [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)       | [mySqrt](src/array/binarysearch/mySqrt/Solution.java)        | `(long) mid * mid`                             |          |
-| [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) |                                                              | 同上                                           |          |
-| [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [searchRotate](src/array/binarysearch/searchRotate/Solution.java) | `nums[0] <= nums[mid]`左边有序                 |          |
-| [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [searchRotate2](src/array/binarysearch/searchRotate2/Solution.java) | 注意`left=mid,left++`，`mid=right,right--`     |          |
+| 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [binarysearch](src/array/binarysearch/Solution.java)         |                                                              | 2        |
+| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](src/array/binarysearch/searchInsert/Solution.java) | `return left;`                                               |          |
+| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](src/array/binarysearch/searchRange/Solution.java) | 两遍二分查找，分别找到最左边和最右边的target位               |          |
+| [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)       | [mySqrt](src/array/binarysearch/mySqrt/Solution.java)        | `(long) mid * mid`                                           |          |
+| [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) |                                                              | 同上                                                         |          |
+| [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [searchRotate](src/array/binarysearch/searchRotate/Solution.java) | `nums[0] <= nums[mid]`左边有序                               |          |
+| [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [searchRotate2](src/array/binarysearch/searchRotate2/Solution.java) | 注意`left=mid,left++`，`mid=right,right--`                   |          |
+| [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | [searchMatrix](src/array/binarysearch/searchMatrix/Solution.java) | `i = mid/m, j = mid%m`                                       |          |
+| [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | [findMin](src/array/binarysearch/findMin/Solution.java)      | `nums[mid] > nums[hight]`：最小值在mid左边<br />else: 最小值是mid，或者在mid右边,`minV = min(minV, nums[mid])` |          |
 
 
 
@@ -327,20 +329,20 @@ void backtracking(参数) {
 
 ### 组合
 
-| 题目链接                                                     | 实现代码                                                     | 说明                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- |
-| [77. 组合](https://leetcode.cn/problems/combinations/)       | [combine](src/backtracking/combination/combine/Solution.java) | 剪枝：`i<=n-(k-path.size())+1`                           |
-| [216. 组合总和 III](https://leetcode.cn/problems/combination-sum-iii/) | [combinationSum3](src/backtracking/combination/combinationSum3/Solution.java) | 剪枝：`upper = n < 9 ? n : 9`                            |
-| [17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [letterCombinations](src/backtracking/combination/letterCombinations/Solution.java) |                                                          |
-| [39. 组合总和](https://leetcode.cn/problems/combination-sum/) | [combinationSum]()                                           | 剪枝：`i < candidates.length && candidates[i] <= target` |
-| [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) | [combinationSum2](src/backtracking/combination/combinationSum2/Solution.java) | 去重：`used[i]=0表示树层使用过`                          |
-|                                                              |                                                              |                                                          |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                     | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- | -------- |
+| [77. 组合](https://leetcode.cn/problems/combinations/)       | [combine](src/backtracking/combination/combine/Solution.java) | 剪枝：`i<=n-(k-path.size())+1`                           |          |
+| [216. 组合总和 III](https://leetcode.cn/problems/combination-sum-iii/) | [combinationSum3](src/backtracking/combination/combinationSum3/Solution.java) | 剪枝：`upper = n < 9 ? n : 9`                            |          |
+| [17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [letterCombinations](src/backtracking/combination/letterCombinations/Solution.java) |                                                          |          |
+| [39. 组合总和](https://leetcode.cn/problems/combination-sum/) | [combinationSum]()                                           | 剪枝：`i < candidates.length && candidates[i] <= target` | 2        |
+| [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) | [combinationSum2](src/backtracking/combination/combinationSum2/Solution.java) | 去重：`used[i]=0表示树层使用过`                          |          |
+|                                                              |                                                              |                                                          |          |
 
 ### 分割
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------- |
-| [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/) | [partition](src/backtracking/partition/v/Solution.java)      |                                        |
+| [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/) | [partition](src/backtracking/partition/Solution.java)        |                                        |
 | [93. 复原 IP 地址](https://leetcode.cn/problems/restore-ip-addresses/) | [restoreIpAddresses](src/backtracking/partition/restoreIpAddresses/Solution.java) | 递归三层即可，剩下的直接进行合法性判断 |
 
 ### 子集
@@ -354,26 +356,28 @@ void backtracking(参数) {
 
 ### 排列
 
-| 题目链接                                                     | 实现代码                                                     | 说明                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------- |
-| [46. 全排列](https://leetcode.cn/problems/permutations/)     | [permute](src/backtracking/permute/permute/Solution.java)    | 使用used判断哪些元素使用过了 |
-| [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/) | [permuteUnique](src/backtracking/permute/permuteUnique/Solution.java) | !used[i-1]: 树层去重更高效   |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [46. 全排列](https://leetcode.cn/problems/permutations/)     | [permute](src/backtracking/permute/permute/Solution.java)    | 使用used判断哪些元素使用过了                                 | 2        |
+| [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/) | [permuteUnique](src/backtracking/permute/permuteUnique/Solution.java) | !used[i-1]: 树层去重更高效                                   |          |
+| [22. 括号生成](https://leetcode.cn/problems/generate-parentheses/) | [generateParenthesis](src/backtracking/permute/generateParenthesis/Solution.java) | left > 0 可以使用左括号<br />left < right，才可以使用右。<br />left=right=0为结果。 | 2        |
+|                                                              |                                                              |                                                              |          |
 
 
 
 ### 棋盘问题
 
-| 题目链接                                                  | 实现代码 | 说明 |
-| --------------------------------------------------------- | -------- | ---- |
-| [51. N 皇后](https://leetcode.cn/problems/n-queens/)      |          |      |
-| [37. 解数独](https://leetcode.cn/problems/sudoku-solver/) |          |      |
+| 题目链接                                                  | 实现代码                                                     | 说明 |
+| --------------------------------------------------------- | ------------------------------------------------------------ | ---- |
+| [51. N 皇后](https://leetcode.cn/problems/n-queens/)      | [solveNQueens](src/backtracking/chess/solveNQueens/Solution.java) |      |
+| [37. 解数独](https://leetcode.cn/problems/sudoku-solver/) |                                                              |      |
 
 ### 其它
 
 | 题目链接                                                     | 实现代码                                                  | 说明             |
 | ------------------------------------------------------------ | --------------------------------------------------------- | ---------------- |
 | [491. 非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | [subsets](src/backtracking/subsets/subsets/Solution.java) | 去重逻辑有点特别 |
-|                                                              |                                                           |                  |
+|                                                              | [exist](src/backtracking/exist/Solution.java)             | 注意减枝策略     |
 
 
 
@@ -575,3 +579,15 @@ void backtracking(参数) {
 ### 最短路算法
 
 企业真题
+
+
+
+
+
+## 其他技巧
+
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |
+|                                                              |                                                              |                                                              |
+
