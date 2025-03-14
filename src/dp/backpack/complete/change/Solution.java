@@ -29,5 +29,8 @@ public class Solution {
         Solution solution = new Solution();
         int[] coins = new int[]{1,2,5};
         System.out.println(solution.coinChange(coins, 11));
+        String[] test = new String[]{"2", "10", "100"};
+        Arrays.sort(test);
+        System.out.println(test[0] + " " + test[1] + " " + test[2]);
     }
 }

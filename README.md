@@ -29,6 +29,7 @@
 | [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [searchRotate2](src/array/binarysearch/searchRotate2/Solution.java) | 注意`left=mid,left++`，`mid=right,right--`                   |          |
 | [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | [searchMatrix](src/array/binarysearch/searchMatrix/Solution.java) | `i = mid/m, j = mid%m`                                       |          |
 | [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | [findMin](src/array/binarysearch/findMin/Solution.java)      | `nums[mid] > nums[hight]`：最小值在mid左边<br />else: 最小值是mid，或者在mid右边,`minV = min(minV, nums[mid])` |          |
+| [240. 搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) |                                                              |                                                              |          |
 
 
 
@@ -72,7 +73,15 @@
 
 
 
+## 堆
 
+优先队列的原理：https://yijunquan.blog.csdn.net/article/details/122801686
+
+| 题目链接                                                     | 代码                                                    | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------ | -------- |
+| [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |                                                         | 第k大，用最小堆，第k小，用最大堆<br />建立一个长度为K的最小堆，每次插入一个新数只需要和头节点对比，大于就替换头节点并reheap，小于直接抛掉。循环一次后头节点就是第K大的数了<br />快排: $O(N),O(\log N)$<br />堆排序: $O(N\log N), O(\log N)$ |          |
+|                                                              |                                                         |                                                              |          |
+| [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) | [medianFinder](src/heap/medianFinder/MedianFinder.java) | 左边大顶堆，右边小顶堆，小的加左边，大的加右边，平衡俩堆数，新加就弹出，堆顶给对家，奇数取多的，偶数取除2. |          |
 
 
 
