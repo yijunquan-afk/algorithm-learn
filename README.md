@@ -449,51 +449,52 @@ void backtracking(参数) {
 
 ### 基础题目
 
-| 题目链接                                                     | 实现代码                                                     | 说明                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------- |
-| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java)                        |                                   |
-| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)  | [climbStairs](src/dp/basic/climbStairs/Solution.java)        |                                   |
-| [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | [minCostClimbingStairs](src/dp/basic/minCostClimbingStairs/Solution.java) |                                   |
-| [62. 不同路径](https://leetcode.cn/problems/unique-paths/)   | [uniquePaths](src/dp/basic/uniquePaths/Solution.java)        |                                   |
-| [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | [uniquePathsWithObstacles](src/dp/basic/uniquePathsWithObstacles/Solution.java) |                                   |
-| [343. 整数拆分](https://leetcode.cn/problems/integer-break/) |                                                              |                                   |
-| [96. 不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/) | [numTrees](src/dp/basic/numTrees/Solution.java)              | `dp[i] += dp[j - 1] * dp[i - j];` |
-|                                                              |                                                              |                                   |
+| 题目链接                                                     | 实现代码                                                     | 说明                              | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------- | -------- |
+| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [fib](src/dp/basic/fib/Solution.java)                        |                                   | 2        |
+| [1137. 第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) |                                                              |                                   | 1        |
+| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)  | [climbStairs](src/dp/basic/climbStairs/Solution.java)        |                                   | 2        |
+| [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | [minCostClimbingStairs](src/dp/basic/minCostClimbingStairs/Solution.java) |                                   | 2        |
+| [62. 不同路径](https://leetcode.cn/problems/unique-paths/)   | [uniquePaths](src/dp/basic/uniquePaths/Solution.java)        |                                   |          |
+| [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | [uniquePathsWithObstacles](src/dp/basic/uniquePathsWithObstacles/Solution.java) |                                   |          |
+| [343. 整数拆分](https://leetcode.cn/problems/integer-break/) |                                                              |                                   |          |
+| [96. 不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/) | [numTrees](src/dp/basic/numTrees/Solution.java)              | `dp[i] += dp[j - 1] * dp[i - j];` |          |
+|                                                              |                                                              |                                   |          |
 
 ### 背包问题
 
 #### 0-1背包
 
-| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | [canPartition](src/dp/backpack/onezero/canPartition/Solution.java) | 物品是`nums[i]`，重量是`nums[i]`，价值也是`nums[i]`，背包体积是`sum/2`。 |
-| [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/) | [lastStoneWeightII](src/dp/backpack/onezero/lastStoneWeightII/Solution.java) | 尽可能分成两半                                               |
-| [494. 目标和](https://leetcode.cn/problems/target-sum/)      | [findTargetSumWays](src/dp/backpack/onezero/findTargetSumWays/Solution.java) | 物品是`nums[i]`，重量是`nums[i]`，价值也是`nums[i]`，背包体积是`sum-target/2`。<br />`dp[j] += dp[j - nums[i]];` |
-| [474. 一和零](https://leetcode.cn/problems/ones-and-zeroes/) | [findMaxForm](src/dp/backpack/onezero/findMaxForm/Solution.java) | 两个维度: `dp[i][j] = max(dp[i][j], dp[i - zeroNum][j - oneNum] + 1);` |
-|                                                              |                                                              |                                                              |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | [canPartition](src/dp/backpack/onezero/canPartition/Solution.java) | 物品是`nums[i]`，重量是`nums[i]`，价值也是`nums[i]`，背包体积是`sum/2`。 | 2        |
+| [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/) | [lastStoneWeightII](src/dp/backpack/onezero/lastStoneWeightII/Solution.java) | 尽可能分成两半，`sum - 2 * dp[target]`                       | 2        |
+| [494. 目标和](https://leetcode.cn/problems/target-sum/)      | [findTargetSumWays](src/dp/backpack/onezero/findTargetSumWays/Solution.java) | 物品是`nums[i]`，重量是`nums[i]`，价值也是`nums[i]`，背包体积是`sum-target/2`。<br />`dp[j] += dp[j - nums[i]];` | 2        |
+| [474. 一和零](https://leetcode.cn/problems/ones-and-zeroes/) | [findMaxForm](src/dp/backpack/onezero/findMaxForm/Solution.java) | 两个维度: `dp[i][j] = max(dp[i][j], dp[i - zeroNum][j - oneNum] + 1);` | 2        |
+|                                                              |                                                              |                                                              |          |
 
 #### 完全背包
 
 一维dp：内循环正序
 
-| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) | [change2](src/dp/backpack/complete/change2/Solution.java)    | 组合问题，先遍历物品，再遍历背包                             |
-| [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [combinationSum4](dp/backpack/complete/combinationSum4/Solution.java) | 排列问题，先遍历背包，再遍历物品                             |
-| [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)   | [change](src/dp/backpack/complete/change/Solution.java)      | 求的是最少数，遍历顺序无所谓                                 |
-| [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [numSquares](src/dp/backpack/complete/numSquares/Solution.java) | 同上                                                         |
-| [139. 单词拆分](https://leetcode.cn/problems/word-break/)    | [wordBreak](src/dp/backpack/complete/wordBreak/Solution.java) | 排列问题，先遍历背包，再遍历物品<br />递推公式是 if([j, i] 这个区间的子串出现在字典里 && dp[j]是true) 那么 dp[i] = true。 |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) | [change2](src/dp/backpack/complete/change2/Solution.java)    | 组合问题，先遍历物品，再遍历背包<br />`dp[j] = dp[j] + dp[j-coins[i]]` | 2        |
+| [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [combinationSum4](dp/backpack/complete/combinationSum4/Solution.java) | 排列问题，先遍历背包，再遍历物品                             | 2        |
+| [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)   | [change](src/dp/backpack/complete/change/Solution.java)      | 求的是最少数，遍历顺序无所谓<br />`dp[j] = Math.min(dp[j], dp[j-coins[i]] + 1)` | 2        |
+| [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [numSquares](src/dp/backpack/complete/numSquares/Solution.java) | 同上                                                         | 2        |
+| [139. 单词拆分](https://leetcode.cn/problems/word-break/)    | [wordBreak](src/dp/backpack/complete/wordBreak/Solution.java) | 排列问题，先遍历背包，再遍历物品<br />递推公式是 if([j, i] 这个区间的子串出现在字典里 && dp[j]是true) 那么 dp[i] = true。 | 2        |
 
 
 
 ### 打家劫舍
 
-| 题目链接                                                     | 实现代码                              | 说明                                            |
-| ------------------------------------------------------------ | ------------------------------------- | ----------------------------------------------- |
-| [198. 打家劫舍](https://leetcode.cn/problems/house-robber/)  | [rob](src/dp/rob/rob/Solution.java)   | `dp[i] = Math.max(dp[i-1], dp[i-2] + nums[i]);` |
-| [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | [rob2](src/dp/rob/rob2/Solution.java) | 两种情况：去掉第一个房子，去掉最后一个房子      |
-| [337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/) | [rob3](src/dp/rob/rob3/Solution.java) | ==树形dp==                                      |
-|                                                              |                                       |                                                 |
+| 题目链接                                                     | 实现代码                                                  | 说明                                            |
+| ------------------------------------------------------------ | --------------------------------------------------------- | ----------------------------------------------- |
+| [198. 打家劫舍](https://leetcode.cn/problems/house-robber/)  | [rob](src/dp/rob/rob/Solution.java)                       | `dp[i] = Math.max(dp[i-1], dp[i-2] + nums[i]);` |
+| [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | [rob2](src/dp/rob/rob2/Solution.java)                     | 两种情况：去掉第一个房子，去掉最后一个房子      |
+| [337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/) | [rob3](src/dp/rob/rob3/Solution.java)                     | ==树形dp==                                      |
+| [740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/) | [deleteAndEarn](src/dp/basic/deleteAndEarn/Solution.java) |                                                 |
 
 
 
@@ -595,8 +596,8 @@ void backtracking(参数) {
 
 ## 其他技巧
 
-| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |
-|                                                              |                                                              |                                                              |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |      | 出题公司  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | --------- |
+| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |      |           |
+| [75. 颜色分类](https://leetcode.cn/problems/sort-colors/)    | [sortColors](src/zothers/sortColors/Solution.java)           | 荷兰国旗问题：[解析](./notes/荷兰国旗问题.md)                |      | 腾讯-2024 |
 

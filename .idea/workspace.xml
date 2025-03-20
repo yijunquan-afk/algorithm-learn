@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/array/binarysearch/searchMatrix2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/heap/findKthLargest/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/heap/medianFinder/MedianFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/heap/medianFinder/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/backpack/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/basic/deleteAndEarn/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zothers/sortColors/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java" afterDir="false" />
@@ -61,9 +60,9 @@
     "vue.rearranger.settings.migration": "true",
     "应用程序.AQueueTest.executor": "Run",
     "应用程序.AStackTest.executor": "Run",
-    "应用程序.Main.executor": "Run",
+    "应用程序.Main.executor": "Debug",
     "应用程序.MyQueue.executor": "Run",
-    "应用程序.Solution.executor": "Run",
+    "应用程序.Solution.executor": "Debug",
     "应用程序.Test.executor": "Run",
     "应用程序.array.isPalindrome.Solution.executor": "Run",
     "应用程序.array.maxProfit.Solution.executor": "Run",
@@ -123,7 +122,8 @@
       <workItem from="1740193182476" duration="24905000" />
       <workItem from="1740560543509" duration="51897000" />
       <workItem from="1741677629058" duration="3329000" />
-      <workItem from="1741781229128" duration="7105000" />
+      <workItem from="1741781229128" duration="16318000" />
+      <workItem from="1742444332016" duration="4885000" />
     </task>
     <servers />
   </component>
@@ -297,16 +297,6 @@
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dp/backpack/complete/change2/Solution.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/backpack/complete/combinationSum4/Solution.java</url>
           <line>20</line>
           <option name="timeStamp" value="75" />
@@ -374,6 +364,16 @@
           <line>18</line>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/backpack/Main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
           <line>17</line>
@@ -409,6 +409,8 @@
         <watch expression="array.get(len/2 - 1)" language="JAVA" />
         <watch expression="(array.get(len/2) + array.get(len/2 - 1)) / 2" language="JAVA" />
         <watch expression="(array.get(len/2) + array.get(len/2 - 1))" language="JAVA" />
+        <watch expression="dp[i-1][j-cost[i]]+ value[i]" language="JAVA" />
+        <watch expression="dp[i-1][j]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
