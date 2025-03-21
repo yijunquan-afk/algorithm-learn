@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dp/backpack/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/basic/deleteAndEarn/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zothers/sortColors/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/backpack/complete/change/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/荷兰国旗问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/荷兰国旗问题.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,7 @@
       <workItem from="1740560543509" duration="51897000" />
       <workItem from="1741677629058" duration="3329000" />
       <workItem from="1741781229128" duration="16318000" />
-      <workItem from="1742444332016" duration="4885000" />
+      <workItem from="1742444332016" duration="6105000" />
     </task>
     <servers />
   </component>

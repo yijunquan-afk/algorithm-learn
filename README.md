@@ -16,6 +16,8 @@
 
 
 
+
+
 ## 二分查找
 
 | 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
@@ -70,6 +72,28 @@
 |                                                              |                                                     |      |          |
 |                                                              |                                                     |      |          |
 |                                                              |                                                     |      |          |
+
+
+
+## 前缀和
+
+解析：[前缀和](./notes/前缀和.md)
+
+参考：[灵神](https://leetcode.cn/problems/range-sum-query-immutable/solutions/2693498/qian-zhui-he-ji-qi-kuo-zhan-fu-ti-dan-py-vaar/)
+
+1. 如何计算数组元素到某个数的距离之和？见 [2602. 使数组元素全部相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-all-array-elements-equal/description/)
+2. 如何计算元素和等于 k 的子数组个数？见 [560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/)
+3. 把 nums 改成二维矩阵，如何计算子矩阵的元素和？[304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/)
+4. 如果可以修改 nums 的元素值呢？[307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+5. 对于[53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)，除了 DP 做法外，还可以用 前缀和 解决。这一做法可以扩展到子数组长度有下限/上限，子数组元素和有上限等。
+
+| 题目链接                                                     | 代码 | 说明 | 刷题次数 |
+| ------------------------------------------------------------ | ---- | ---- | -------- |
+| [303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) |      |      |          |
+|                                                              |      |      |          |
+|                                                              |      |      |          |
+|                                                              |      |      |          |
+|                                                              |      |      |          |
 
 
 
