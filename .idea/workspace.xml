@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/prefixsum/NumArray/NumArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prefixsum/subarraySum/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/flatten/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/荷兰国旗问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/荷兰国旗问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/traversal/preorderTraversal/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/traversal/preorderTraversal/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +63,8 @@
     "vue.rearranger.settings.migration": "true",
     "应用程序.AQueueTest.executor": "Run",
     "应用程序.AStackTest.executor": "Run",
-    "应用程序.Main.executor": "Debug",
+    "应用程序.Main.executor": "Run",
+    "应用程序.Main2.executor": "Run",
     "应用程序.MyQueue.executor": "Run",
     "应用程序.Solution.executor": "Debug",
     "应用程序.Test.executor": "Run",
@@ -120,7 +127,9 @@
       <workItem from="1740560543509" duration="51897000" />
       <workItem from="1741677629058" duration="3329000" />
       <workItem from="1741781229128" duration="16318000" />
-      <workItem from="1742444332016" duration="6105000" />
+      <workItem from="1742444332016" duration="7231000" />
+      <workItem from="1742633922495" duration="1030000" />
+      <workItem from="1742717424763" duration="16082000" />
     </task>
     <servers />
   </component>
@@ -371,6 +380,26 @@
           <line>32</line>
           <option name="timeStamp" value="113" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/Main.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/Test.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/Test.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/hashtable/fourSumCount/Solution.java</url>
           <line>17</line>
@@ -398,17 +427,5 @@
         <PinnedItemInfo parentTag="backtracking.partition.restoreIpAddresses.Solution" memberName="res" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="array.get(len/2)" language="JAVA" />
-        <watch expression="len/2" language="JAVA" />
-        <watch expression="len/2 - 1" language="JAVA" />
-        <watch expression="array.get(len/2 - 1)" language="JAVA" />
-        <watch expression="(array.get(len/2) + array.get(len/2 - 1)) / 2" language="JAVA" />
-        <watch expression="(array.get(len/2) + array.get(len/2 - 1))" language="JAVA" />
-        <watch expression="dp[i-1][j-cost[i]]+ value[i]" language="JAVA" />
-        <watch expression="dp[i-1][j]" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

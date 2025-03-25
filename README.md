@@ -87,13 +87,13 @@
 4. 如果可以修改 nums 的元素值呢？[307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
 5. 对于[53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)，除了 DP 做法外，还可以用 前缀和 解决。这一做法可以扩展到子数组长度有下限/上限，子数组元素和有上限等。
 
-| 题目链接                                                     | 代码 | 说明 | 刷题次数 |
-| ------------------------------------------------------------ | ---- | ---- | -------- |
-| [303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) |      |      |          |
-|                                                              |      |      |          |
-|                                                              |      |      |          |
-|                                                              |      |      |          |
-|                                                              |      |      |          |
+| 题目链接                                                     | 代码                                                   | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) | [NumArray](src/prefixsum/NumArray/NumArray.java)       | `num[i,j] = prefixSum[j+1]-prefixSum[i]`                     |          |
+| [560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/) | [subarraySum](src/prefixsum/subarraySum/Solution.java) | 用哈希表记录前缀和的个数，就能 O(1) 算出左边有多少个 `s[j]−k`。<br />==数组不是单调的话，不要用滑动窗口，考虑用前缀和== |          |
+|                                                              |                                                        |                                                              |          |
+|                                                              |                                                        |                                                              |          |
+|                                                              |                                                        |                                                              |          |
 
 
 
@@ -214,9 +214,9 @@ for (int i = 0; i < nums.length; i++) {
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                     | 刷题次数 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------- | -------- |
-| [144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [preorderTraversal](src/tree/traversal/preorderTraversal/Solution.java) | 迭代法注意入栈顺序：中右左               |          |
-| [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | [inorderTraversal](src/tree/traversal/inorderTraversal/Solution.java) | 迭代法和前序遍历不一样，放的是node       |          |
-| [145. 二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | [postorderTraversal](src/tree/traversal/postorderTraversal/Solution.java) | 迭代法修改前序遍历的，中右左反转->左右中 |          |
+| [144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [preorderTraversal](src/tree/traversal/preorderTraversal/Solution.java) | 迭代法注意入栈顺序：中右左               | 2        |
+| [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | [inorderTraversal](src/tree/traversal/inorderTraversal/Solution.java) | 迭代法和前序遍历不一样，放的是node       | 2        |
+| [145. 二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | [postorderTraversal](src/tree/traversal/postorderTraversal/Solution.java) | 迭代法修改前序遍历的，中右左反转->左右中 | 2        |
 | [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [levelOrder](src/tree/traversal/levelOrder/Solution.java)    |                                          |          |
 | [107. 二叉树的层序遍历 II](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) | [levelOrderBottom](src/tree/traversal/levelOrderBottom/Solution.java) | 逆序即可                                 |          |
 | [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) | [rightSideView](src/tree/traversal/rightSideView/Solution.java) |                                          |          |
@@ -251,14 +251,15 @@ for (int i = 0; i < nums.length; i++) {
 
 ### 二叉树的修改与创建
 
-| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [buildtree](src/tree/buildTree/Solution.java)                | 比较难：[思路1](https://programmercarl.com/0106.%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)、[思路2](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/426738/cong-zhong-xu-yu-hou-xu-bian-li-xu-lie-gou-zao-14/) |
-| [105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [buildtree2](src/tree/buildtree2/Solution.java)              | 跟106差不多                                                  |
-| [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) | [constructMaximumBinaryTree](src/tree/constructMaximumBinaryTree/Solution.java) | 尽量在原数组上操作                                           |
-|                                                              |                                                              |                                                              |
-| [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/) | [invertTree](src/tree/invertTree/Solution.java)              |                                                              |
-| [617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [mergeTrees](src/tree/mergeTrees/Solution.java)              |                                                              |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [buildtree](src/tree/buildTree/Solution.java)                | 比较难：[思路1](https://programmercarl.com/0106.%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)、[思路2](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/426738/cong-zhong-xu-yu-hou-xu-bian-li-xu-lie-gou-zao-14/) |          |
+| [105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [buildtree2](src/tree/buildtree2/Solution.java)              | 跟106差不多                                                  |          |
+| [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) | [constructMaximumBinaryTree](src/tree/constructMaximumBinaryTree/Solution.java) | 尽量在原数组上操作                                           |          |
+| [114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | [flatten](src/tree/flatten/Solution.java)                    |                                                              |          |
+| [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/) | [invertTree](src/tree/invertTree/Solution.java)              |                                                              |          |
+| [617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [mergeTrees](src/tree/mergeTrees/Solution.java)              |                                                              |          |
+|                                                              |                                                              |                                                              |          |
 
 106步骤：
 
@@ -332,6 +333,7 @@ for (int i = 0; i < nums.length; i++) {
 | [701. 二叉搜索树中的插入操作](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) | [insert](src/tree/bst/insertIntoBST/Solution.java)  | 遍历二叉搜索树，找到空节点插入元素就可以                     |
 | [450. 删除二叉搜索树中的节点](https://leetcode.cn/problems/delete-node-in-a-bst/) | [deleteNode](src/tree/bst/deleteNode/Solution.java) | 找到节点，将其替换为右子树的最小节点，然后删除右子树的最小节点 |
 | [669. 修剪二叉搜索树](https://leetcode.cn/problems/trim-a-binary-search-tree/) | [trimBST](src/tree/bst/trimBST/Solution.java)       | [思路](https://programmercarl.com/0669.%E4%BF%AE%E5%89%AA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html#%E6%80%9D%E8%B7%AF) |
+| [108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) |                                                     | 递归即可，取中间的为根节点                                   |
 
 
 
@@ -532,6 +534,8 @@ void backtracking(参数) {
 | [123. 买卖股票的最佳时机 III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) | [maxProfit4](src/dp/maxProfit/maxProfit4/Solution.java) | 最多买卖k次，(2k+1)个状态，==hard==                          |
 | [309. 买卖股票的最佳时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [maxProfit5](src/dp/maxProfit/maxProfit5/Solution.java) | 四个状态看解析：[买入状态、卖出状态、今天卖出、冷冻状态](https://programmercarl.com/0309.%E6%9C%80%E4%BD%B3%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E6%97%B6%E6%9C%BA%E5%90%AB%E5%86%B7%E5%86%BB%E6%9C%9F.html#%E6%80%9D%E8%B7%AF) |
 | [714. 买卖股票的最佳时机含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [maxProfit6](src/dp/maxProfit/maxProfit6/Solution.java) | 每次卖出的时候减去手续费即可                                 |
+
+
 
 
 
