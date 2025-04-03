@@ -626,14 +626,14 @@ void backtracking(参数) {
 
 ## 其他技巧
 
-| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 出题公司  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------- |
-| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |           |
-| [75. 颜色分类](https://leetcode.cn/problems/sort-colors/)    | [sortColors](src/zothers/sortColors/Solution.java)           | 荷兰国旗问题：[解析](./notes/荷兰国旗问题.md)                | 腾讯-2024 |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |      | 出题公司  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | --------- |
+| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |      |           |
+| [75. 颜色分类](https://leetcode.cn/problems/sort-colors/)    | [sortColors](src/zothers/sortColors/Solution.java)           | 荷兰国旗问题：[解析](./notes/荷兰国旗问题.md)                |      | 腾讯-2024 |
 
 ### 快速幂
 
-| 题目链接                                                     | 实现代码                              | 说明                      | 出题公司 |
-| ------------------------------------------------------------ | ------------------------------------- | ------------------------- | -------- |
-| [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/)、[牛客234769 快速幂](https://www.nowcoder.com/practice/defdedf4fe984c6c91eefa6b00d5f4f0?tpId=382&tqId=44757&rp=1&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=%E5%B9%82) | [pow](python/zothers/quickpow/pow.py) | [解析](./notes/快速幂.md) | pdd      |
-| [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) |                                       |                           |          |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |      | 出题公司 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | -------- |
+| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |      |          |
+| [75. 颜色分类](https://leetcode.cn/problems/sort-colors/)    |                                                              |                                                              |      |          |
