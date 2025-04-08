@@ -111,11 +111,12 @@
 
 ## 哈希表
 
-| 题目链接                                                     | 代码                                                | 说明 | 刷题次数 |
-| ------------------------------------------------------------ | --------------------------------------------------- | ---- | -------- |
-| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                                      |      |          |
-| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](src/doublepointers/maxArea/Solution.java) |      |          |
-|                                                              |                                                     |      |          |
+| 题目链接                                                     | 代码                                                         | 说明                      | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- | -------- |
+| [1. 两数之和](https://leetcode.cn/problems/two-sum/)         | [twoSum](python/hashtable/twoSum.py)                         |                           | 2        |
+| [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | [groupAnagrams](python/hashtable/groupAnagrams.py)           | 排序后的字符串作为键      | 2        |
+| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时 | 2        |
+| [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | [intersection](python/hashtable/intersection.py)             |                           | 2        |
 
 
 
@@ -633,7 +634,23 @@ void backtracking(参数) {
 
 ### 快速幂
 
-| 题目链接                                                     | 实现代码                              | 说明                      | 出题公司 |
-| ------------------------------------------------------------ | ------------------------------------- | ------------------------- | -------- |
-| [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/)、[牛客234769 快速幂](https://www.nowcoder.com/practice/defdedf4fe984c6c91eefa6b00d5f4f0?tpId=382&tqId=44757&rp=1&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=%E5%B9%82) | [pow](python/zothers/quickpow/pow.py) | [解析](./notes/快速幂.md) | pdd      |
-| [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) |                                       |                           |          |
+| 题目链接                                                     | 实现代码                                                     | 说明                      | 出题公司 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- | -------- |
+| [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/)、[牛客234769 快速幂](https://www.nowcoder.com/practice/defdedf4fe984c6c91eefa6b00d5f4f0?tpId=382&tqId=44757&rp=1&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=%E5%B9%82) | [pow](python/zothers/quickpow/pow.py)                        | [解析](./notes/快速幂.md) | pdd      |
+| [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) | [countGoodNumbers](python/zothers/quickpow/countGoodNumbers.py) |                           |          |
+
+![image-20250405191232870](./assets/image-20250405191232870.png)
+
+![image-20250405191243556](./assets/image-20250405191243556.png)
+
+![image-20250405191254870](./assets/image-20250405191254870.png)
+
+![image-20250405191300957](./assets/image-20250405191300957.png)
+
+![image-20250405191324614](./assets/image-20250405191324614.png)
+
+![image-20250405192605139](./assets/image-20250405192605139.png)
+
+![image-20250405192613872](./assets/image-20250405192613872.png)
+
+![image-20250405192621307](./assets/image-20250405192621307.png)
