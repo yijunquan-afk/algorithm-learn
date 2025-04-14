@@ -65,13 +65,13 @@
 
 ## 双指针
 
-| 题目链接                                                     | 代码                                                | 说明 | 刷题次数 |
-| ------------------------------------------------------------ | --------------------------------------------------- | ---- | -------- |
-| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                                      |      |          |
-| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](src/doublepointers/maxArea/Solution.java) |      |          |
-|                                                              |                                                     |      |          |
-|                                                              |                                                     |      |          |
-|                                                              |                                                     |      |          |
+| 题目链接                                                     | 代码                                                | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------ | -------- |
+| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                                      |                                                              |          |
+| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](src/doublepointers/maxArea/Solution.java) |                                                              |          |
+| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/hashtable/threeSum.py)            | `nums[i],nums[left],nums[right]`<br />`nums[i] == nums[i-1]`<br />`nums[left]==nums[left+1]`<br />`nums[right]==nums[right+1]`去重 | 2        |
+|                                                              |                                                     |                                                              |          |
+|                                                              |                                                     |                                                              |          |
 
 
 
@@ -111,12 +111,17 @@
 
 ## 哈希表
 
-| 题目链接                                                     | 代码                                                         | 说明                      | 刷题次数 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- | -------- |
-| [1. 两数之和](https://leetcode.cn/problems/two-sum/)         | [twoSum](python/hashtable/twoSum.py)                         |                           | 2        |
-| [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | [groupAnagrams](python/hashtable/groupAnagrams.py)           | 排序后的字符串作为键      | 2        |
-| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时 | 2        |
-| [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | [intersection](python/hashtable/intersection.py)             |                           | 2        |
+| 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [1. 两数之和](https://leetcode.cn/problems/two-sum/)         | [twoSum](python/hashtable/twoSum.py)                         |                                                              | 2        |
+| [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | [groupAnagrams](python/hashtable/groupAnagrams.py)           | 排序后的字符串作为键                                         | 2        |
+| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时                                    | 2        |
+| [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | [intersection](python/hashtable/intersection.py)             |                                                              | 2        |
+| [202. 快乐数](https://leetcode.cn/problems/happy-number/)    | [isHappy](python/hashtable/isHappy.py)                       | divmod 是一个非常方便的函数，可以同时获取商和余数，<br />避免了分别使用 // 和 % 的麻烦。 | 2        |
+| [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)    | [fourSumCount](python/hashtable/fourSumCount.py)             | 两个循环求dict，另外两个循环判断存在性，$O(n^2)$             | 2        |
+| [383. 赎金信](https://leetcode.cn/problems/ransom-note/)     | [canConstruct](python/hashtable/canConstruct.py)             |                                                              | 2        |
+| [18. 四数之和](https://leetcode.cn/problems/4sum/)           | [fourSum](python/hashtable/fourSum.py)                       | $O(n^4)$ —> $O(n^3)$                                         | 2        |
+| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/hashtable/threeSum.py)                     |                                                              | 2        |
 
 
 
@@ -126,9 +131,32 @@
 
 ## 栈和队列
 
+[python中的栈和队列](./notes/python中的栈和队列.md)
+
+| 题目链接                                                     | 实现代码                                        | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------------ | -------- |
+| [232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | [stack2queue](python/stackqueue/stack2queue.py) | 出队: outstack为空的时候将instack的元素pop到outstack，再outstack pop | 2        |
+| [225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/) |                                                 | 两个队列: 一个负责备份，popleft完n-1以后倒回去<br />一个队列: 一边popleft一边append |          |
+|                                                              |                                                 |                                                              |          |
+|                                                              |                                                 |                                                              |          |
+
 ### 栈的应用
 
+| 题目链接 | 实现代码 | 说明 |
+| -------- | -------- | ---- |
+|          |          |      |
+|          |          |      |
+|          |          |      |
+|          |          |      |
 
+### 队列的应用
+
+| 题目链接 | 实现代码 | 说明 |
+| -------- | -------- | ---- |
+|          |          |      |
+|          |          |      |
+|          |          |      |
+|          |          |      |
 
 ### 单调栈
 
@@ -613,7 +641,20 @@ void backtracking(参数) {
 
 ### 拓扑排序
 
+| 题目链接                                                     | 实现代码 | 说明 |
+| ------------------------------------------------------------ | -------- | ---- |
+| [802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/) |          |      |
+|                                                              |          |      |
 
+对于有向图的拓扑排序，我们可以使用如下思路输出拓扑序（BFS方式）：
+
+1. 起始时，将所有入度为0的节点进行入队（入度为0，说明没有边指向这些节点，将它们放到拓扑排序的首部，不会违反拓扑序定义）；
+
+2. 从队列中进行节点出队操作，出队序列就是对应我们输出的拓扑序。对于当前弹出的节点x，遍历x的所有出度，即遍历所有由x直接指向的节点y，对y做入度减一操作（因为x节点已经从队列中弹出，被添加到拓扑序中，等价于从x节点从有向图中被移除，相应的由x发出的边也应当被删除，带来的影响是与x相连的节点y的入度减一）；
+
+3. 对y进行入度减一之后，检查y的入度是否为0，如果为0则将y入队（当y的入度为0，说明有向图中在y前面的所有的节点均被添加到拓扑序中，此时y可以作为拓扑序的某个片段的首部被添加，而不是违反拓扑序的定义）；
+
+4. 循环流程2、3直到队列为空。
 
 
 
