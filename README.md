@@ -125,10 +125,6 @@
 
 
 
-
-
-
-
 ## 栈和队列
 
 [python中的栈和队列](./notes/python中的栈和队列.md)
@@ -137,17 +133,14 @@
 | ------------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------------ | -------- |
 | [232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | [stack2queue](python/stackqueue/stack2queue.py) | 出队: outstack为空的时候将instack的元素pop到outstack，再outstack pop | 2        |
 | [225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/) |                                                 | 两个队列: 一个负责备份，popleft完n-1以后倒回去<br />一个队列: 一边popleft一边append |          |
-|                                                              |                                                 |                                                              |          |
-|                                                              |                                                 |                                                              |          |
 
 ### 栈的应用
 
-| 题目链接 | 实现代码 | 说明 |
-| -------- | -------- | ---- |
-|          |          |      |
-|          |          |      |
-|          |          |      |
-|          |          |      |
+| 题目链接                                                     | 实现代码                                                  | 说明                                              | 刷题次数 |
+| ------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------- | -------- |
+| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                   |                                                   | 2        |
+| [1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [removeDuplicates](python/stackqueue/removeDuplicates.py) |                                                   | 2        |
+| [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [evalRPN](python/stackqueue/evalRPN.py)                   | python可以使用dict+operator来简化代码，多看看代码 | 2        |
 
 ### 队列的应用
 
@@ -189,7 +182,8 @@ for (int i = 0; i < nums.length; i++) {
 
 | 题目链接                                               | 代码                                                   | 说明 | 刷题次数 |
 |----------------------------------------------------|------------------------------------------------------| ---- | ---- |
-| [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [finalPrices](src/stackqueue/finalPrices/Solution.java) | 注意从后往前遍历 |  |
+| [155. 最小栈](https://leetcode.cn/problems/min-stack/) | [MinStack](python/stackqueue/MinStack.py) | 两个栈，比较val和min_stack栈顶元素大小<br />`self.min_stack.append(min(val, self.min_stack[-1]))` |  |
+| [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [finalPrices](src/stackqueue/finalPrices/Solution.java) | 注意从后往前遍历 | 2 |
 | [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](src/stackqueue/dailyTemperatures/Solution.java) | 注意等于号 | 2 |
 | [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](src/stackqueue/nextGreaterElement/Solution.java) |      | 2 |
 | [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](src/stackqueue/nextGreaterElements/Solution.java)|用取模代替数组复制|2|
@@ -207,19 +201,12 @@ for (int i = 0; i < nums.length; i++) {
 | [239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) | [maxSlidingWindow](src/stackqueue/maxSlidingWindow/Solution.java) |                           |
 | [LCR 184. 设计自助结算系统](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/) | [checkout](src/stackqueue/checkout/Checkout.java)            |                           |
 | [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [maxSubarray](src/stackqueue/longestSubarray/Solution.java)  | 两个单调队列+最大滑动窗口 |
-|                                                              |                                                              |                           |
-|                                                              |                                                              |                           |
-|                                                              |                                                              |                           |
-|                                                              |                                                              |                           |
-|                                                              |                                                              |                           |
-|                                                              |                                                              |                           |
 
 ### 滑动窗口
 
 | 题目链接                                                     | 实现代码 | 说明 |
 | ------------------------------------------------------------ | -------- | ---- |
 | [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/) |          |      |
-|                                                              |          |      |
 |                                                              |          |      |
 |                                                              |          |      |
 
