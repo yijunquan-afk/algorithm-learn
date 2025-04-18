@@ -136,11 +136,12 @@
 
 ### 栈的应用
 
-| 题目链接                                                     | 实现代码                                                  | 说明                                              | 刷题次数 |
-| ------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------- | -------- |
-| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                   |                                                   | 2        |
-| [1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [removeDuplicates](python/stackqueue/removeDuplicates.py) |                                                   | 2        |
-| [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [evalRPN](python/stackqueue/evalRPN.py)                   | python可以使用dict+operator来简化代码，多看看代码 | 2        |
+| 题目链接                                                     | 实现代码                                                  | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ | -------- |
+| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                   |                                                              | 2        |
+| [1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [removeDuplicates](python/stackqueue/removeDuplicates.py) |                                                              | 2        |
+| [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [evalRPN](python/stackqueue/evalRPN.py)                   | python可以使用dict+operator来简化代码，多看看代码            | 2        |
+| [394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [decodeString](python/stackqueue/decodeString.py)         | c.isdigit()判断数字<br />c.alpha()判读字母<br />`k = k * 10 + int(c)` | 2        |
 
 ### 队列的应用
 
@@ -184,7 +185,7 @@ for (int i = 0; i < nums.length; i++) {
 |----------------------------------------------------|------------------------------------------------------| ---- | ---- |
 | [155. 最小栈](https://leetcode.cn/problems/min-stack/) | [MinStack](python/stackqueue/MinStack.py) | 两个栈，比较val和min_stack栈顶元素大小<br />`self.min_stack.append(min(val, self.min_stack[-1]))` |  |
 | [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [finalPrices](src/stackqueue/finalPrices/Solution.java) | 注意从后往前遍历 | 2 |
-| [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](src/stackqueue/dailyTemperatures/Solution.java) | 注意等于号 | 2 |
+| [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](python/stackqueue/dandiaostack/dailyTemperatures.py) | 从前往后，从后往前都可以，注意等于号 | 3 |
 | [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](src/stackqueue/nextGreaterElement/Solution.java) |      | 2 |
 | [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](src/stackqueue/nextGreaterElements/Solution.java)|用取模代替数组复制|2|
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈||
