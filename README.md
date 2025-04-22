@@ -183,13 +183,13 @@ for (int i = 0; i < nums.length; i++) {
 
 | 题目链接                                               | 代码                                                   | 说明 | 刷题次数 |
 |----------------------------------------------------|------------------------------------------------------| ---- | ---- |
-| [155. 最小栈](https://leetcode.cn/problems/min-stack/) | [MinStack](python/stackqueue/MinStack.py) | 两个栈，比较val和min_stack栈顶元素大小<br />`self.min_stack.append(min(val, self.min_stack[-1]))` |  |
+| [155. 最小栈](https://leetcode.cn/problems/min-stack/) | [MinStack](python/stackqueue/MinStack.py) | 两个栈，比较val和min_stack栈顶元素大小<br />`self.min_stack.append(min(val, self.min_stack[-1]))` | 2 |
 | [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | [finalPrices](src/stackqueue/finalPrices/Solution.java) | 注意从后往前遍历 | 2 |
 | [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [dailyTemperatures](python/stackqueue/dandiaostack/dailyTemperatures.py) | 从前往后，从后往前都可以，注意等于号 | 3 |
-| [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](src/stackqueue/nextGreaterElement/Solution.java) |      | 2 |
-| [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](src/stackqueue/nextGreaterElements/Solution.java)|用取模代替数组复制|2|
-| [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈||
-| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) ||==十分经典==，后面再看看||
+| [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](python/stackqueue/dandiaostack/nextGreaterElement.py) |      | 3 |
+| [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](python/stackqueue/dandiaostack/nextGreaterElements.py)|用取模代替数组复制|3|
+| [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈，先插入一个`(-1, math.inf)`|3|
+| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |[trap](python/stackqueue/dandiaostack/trap.py)|单调递减栈，注意bottom_h =  height[st.pop()]<br />`(min(height[left], h)-bottom_h)*(i-left-1)`||
 
 
 - 单调栈适合解决与索引相关的问题，如求下一个更大/更小的元素。

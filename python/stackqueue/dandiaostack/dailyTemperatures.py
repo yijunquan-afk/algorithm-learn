@@ -14,5 +14,5 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
-    print("test")
+    # print(s.dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
+    print([1,2,3] * 2)
