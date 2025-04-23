@@ -59,7 +59,9 @@
 |                                                              |                                                              |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 
+## 滑动窗口
 
+ 
 
 
 
@@ -154,6 +156,8 @@
 
 ### 单调栈
 
+[灵神单调栈题单](https://leetcode.cn/discuss/post/3579480/ti-dan-dan-diao-zhan-ju-xing-xi-lie-zi-d-u4hk/)
+
 单调栈本质上是 **维护数组中的元素为单调序列**，数组中的元素 **要么** 符合单调性顺利进栈，**要么** 不符合单调性而将栈中其他元素“挤走”再进栈，使得栈中序列始终满足单调性。
 
 理解这一点很重要，我们以单调递增栈为例，如果出现了比栈顶元素 **小** 的值，即不符合当前栈中序列单增特性的值，那么它会使所有比它大的值出栈，而 **该值便是接下来要连续出栈元素右侧最近的小值**，比该值大的栈元素都出栈完毕后，该值进栈，使得栈中的序列仍然满足单调递增。
@@ -189,7 +193,8 @@ for (int i = 0; i < nums.length; i++) {
 | [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](python/stackqueue/dandiaostack/nextGreaterElement.py) |      | 3 |
 | [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](python/stackqueue/dandiaostack/nextGreaterElements.py)|用取模代替数组复制|3|
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈，先插入一个`(-1, math.inf)`|3|
-| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |[trap](python/stackqueue/dandiaostack/trap.py)|单调递减栈，注意bottom_h =  height[st.pop()]<br />`(min(height[left], h)-bottom_h)*(i-left-1)`||
+| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |[trap](python/stackqueue/dandiaostack/trap.py)|单调递减栈，注意bottom_h =  height[st.pop()]<br />`(min(height[left], h)-bottom_h)*(i-left-1)`|1|
+| [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) |[largestRectangleArea](python/stackqueue/dandiaostack/largestRectangleArea.py)|`left = [-1] * n`<br />`right = [n] * n`<br />三次遍历|1·|
 
 
 - 单调栈适合解决与索引相关的问题，如求下一个更大/更小的元素。
@@ -197,19 +202,37 @@ for (int i = 0; i < nums.length; i++) {
 
 ### 单调队列
 
-| 题目链接                                                     | 实现代码                                                     | 说明                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- |
-| [239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) | [maxSlidingWindow](src/stackqueue/maxSlidingWindow/Solution.java) |                           |
-| [LCR 184. 设计自助结算系统](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/) | [checkout](src/stackqueue/checkout/Checkout.java)            |                           |
-| [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [maxSubarray](src/stackqueue/longestSubarray/Solution.java)  | 两个单调队列+最大滑动窗口 |
+[灵神解析](https://leetcode.cn/problems/sliding-window-maximum/solutions/2499715/shi-pin-yi-ge-shi-pin-miao-dong-dan-diao-ezj6)
+
+单调队列套路(双端队列)
+
+1. 入（元素进入**队尾**，同时维护队列**单调性**）
+2. 出（元素离开**队首**）
+3. 记录/维护答案（根据**队首**）
+
+| 题目链接                                                     | 实现代码                                                     | 说明                                      | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------------------------- | -------- |
+| [239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) | [maxSlidingWindow](python/stackqueue/dandiaoqueue/maxSlidingWindow.py) | 队首已经出去了：`i - q[0] + 1 > k`        | 2        |
+| [LCR 184. 设计自助结算系统](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/) | [checkout](src/stackqueue/checkout/Checkout.java)            | `if ans == self.q2[0]: self.q2.popleft()` | 2        |
+| [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [maxSubarray](src/stackqueue/longestSubarray/Solution.java)  | 两个单调队列+最大滑动窗口                 |          |
 
 ### 滑动窗口
 
-| 题目链接                                                     | 实现代码 | 说明 |
-| ------------------------------------------------------------ | -------- | ---- |
-| [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/) |          |      |
-|                                                              |          |      |
-|                                                              |          |      |
+#### 固定长度
+
+套路：入-更新-出。
+
+1. 入：下标为 i 的元素进入窗口，更新相关统计量。如果 i<k−1 则重复第一步。
+2. 更新：更新答案。一般是更新最大值/最小值。
+3. 出：下标为 i−k+1 的元素离开窗口，更新相关统计量。
+
+| 题目链接                                                     | 实现代码                                                     | 说明         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ | -------- |
+| [1456. 定长子串中元音的最大数目](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [maxVowels](python/stackqueue/dandiaoqueue/maxVowels.py)     | ==板子题目== |          |
+| [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/) | [findMaxAverage](python/stackqueue/dandiaoqueue/findMaxAverage.py) |              |          |
+| [1343. 大小为 K 且平均值大于等于阈值的子数组数目](https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) |                                                              |              |          |
+|                                                              |                                                              |              |          |
+|                                                              |                                                              |              |          |
 
 
 
