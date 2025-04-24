@@ -618,20 +618,34 @@ void backtracking(参数) {
 
 ### DFS & BFS
 
-| 题目链接                                                     | 实现代码             | 说明                                                         |
-| ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ |
-| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | [dfs](src/graph/dfsbfs) |                                                              |
-| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](src/graph/dfsbfs/islandnum/dfs.java) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 |
-| [99. 岛屿数量-bfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-bfs](src/graph/dfsbfs/islandnum/bfs.java) | 加入队列 就代表走过，立刻标记 |
-| [100.岛屿的最大面积](https://kamacoder.com/problempage.php?pid=1172) | [islandArea](src/graph/dfsbfs/islandArea/Main.java) | 遇到一个岛屿count++ |
-| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](src/graph/dfsbfs/islandTotalArea/Main.java) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 |
-| [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  |  |
-| [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](src/graph/dfsbfs/islandDown/Main.java) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 |
-| [103.水流问题](https://kamacoder.com/problempage.php?pid=1175) | [flow](src/graph/dfsbfs/flow/Main.java) | 从两个边界逆流而上，都经历过的标记上，时间复杂度为$O(mn)$ |
-| [110.字符串接龙](https://kamacoder.com/problempage.php?pid=1183) |  | ==hard== **无向图求最短路，广搜最为合适，广搜只要搜到了终点，那么一定是最短的路径**。因为广搜就是以起点中心向四周扩散的搜索。 |
-| [104.建造最大岛屿](https://kamacoder.com/problempage.php?pid=1176) |  |  |
-|  |  |  |
-|  |  |  |
+```c
+void dfs(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+
+    for (选择：本节点所连接的其他节点) {
+        处理节点;
+        dfs(图，选择的节点); // 递归
+        回溯，撤销处理结果
+    }
+}
+
+```
+
+| 题目链接                                                     | 实现代码             | 说明                                                         |  |
+| ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | 邻接矩阵实现：[dfs1](python/graph/dfsbfs/dfs1.py)<br />邻接表实现：[dfs2](python/graph/dfsbfs/dfs2.py)<br /> |                                                              |  |
+| [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/) |  | |  |
+| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](src/graph/dfsbfs/islandnum/dfs.java) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 |  |
+| [99. 岛屿数量-bfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-bfs](src/graph/dfsbfs/islandnum/bfs.java) | 加入队列 就代表走过，立刻标记 |  |
+| [100.岛屿的最大面积](https://kamacoder.com/problempage.php?pid=1172) | [islandArea](src/graph/dfsbfs/islandArea/Main.java) | 遇到一个岛屿count++ |  |
+| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](src/graph/dfsbfs/islandTotalArea/Main.java) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 |  |
+| [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  |  |  |
+| [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](src/graph/dfsbfs/islandDown/Main.java) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 |  |
+| [103.水流问题](https://kamacoder.com/problempage.php?pid=1175) | [flow](src/graph/dfsbfs/flow/Main.java) | 从两个边界逆流而上，都经历过的标记上，时间复杂度为$O(mn)$ |  |
+| [110.字符串接龙](https://kamacoder.com/problempage.php?pid=1183) |  | ==hard== **无向图求最短路，广搜最为合适，广搜只要搜到了终点，那么一定是最短的路径**。因为广搜就是以起点中心向四周扩散的搜索。 |  |
 
 
 
@@ -691,18 +705,3 @@ void backtracking(参数) {
 | [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/)、[牛客234769 快速幂](https://www.nowcoder.com/practice/defdedf4fe984c6c91eefa6b00d5f4f0?tpId=382&tqId=44757&rp=1&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=%E5%B9%82) | [pow](python/zothers/quickpow/pow.py)                        | [解析](./notes/快速幂.md) | pdd      |
 | [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) | [countGoodNumbers](python/zothers/quickpow/countGoodNumbers.py) |                           |          |
 
-![image-20250405191232870](./assets/image-20250405191232870.png)
-
-![image-20250405191243556](./assets/image-20250405191243556.png)
-
-![image-20250405191254870](./assets/image-20250405191254870.png)
-
-![image-20250405191300957](./assets/image-20250405191300957.png)
-
-![image-20250405191324614](./assets/image-20250405191324614.png)
-
-![image-20250405192605139](./assets/image-20250405192605139.png)
-
-![image-20250405192613872](./assets/image-20250405192613872.png)
-
-![image-20250405192621307](./assets/image-20250405192621307.png)
