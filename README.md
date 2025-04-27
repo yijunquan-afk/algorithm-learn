@@ -618,6 +618,8 @@ void backtracking(参数) {
 
 ### DFS & BFS
 
+BFS只要搜到终点一定是一条最短路径
+
 ```c
 void dfs(参数) {
     if (终止条件) {
@@ -634,15 +636,16 @@ void dfs(参数) {
 
 ```
 
-| 题目链接                                                     | 实现代码             | 说明                                                         |  |
+| 题目链接                                                     | 实现代码             | 说明                                                         | 刷题次数 |
 | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | 邻接矩阵实现：[dfs1](python/graph/dfsbfs/dfs1.py)<br />邻接表实现：[dfs2](python/graph/dfsbfs/dfs2.py)<br /> |                                                              |  |
-| [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/) |  | |  |
-| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](src/graph/dfsbfs/islandnum/dfs.java) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 |  |
+| [98.所有可达路径](https://kamacoder.com/problempage.php?pid=1170) | 邻接矩阵实现：[dfs1](python/graph/dfsbfs/dfs1.py)<br />邻接表实现：[dfs2](python/graph/dfsbfs/dfs2.py)<br /> |                                                              | 2 |
+| [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/) | [validPath](python/graph/dfsbfs/validPath.py) | 双向图，要用visited记录访问过的，避免重复访问 | 2 |
+| [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | [allPathsSourceTarget](python/graph/dfsbfs/allPathsSourceTarget.py) | | 1 |
+| [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](python/graph/dfsbfs/island/isIslandNum.py) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 | 2 |
 | [99. 岛屿数量-bfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-bfs](src/graph/dfsbfs/islandnum/bfs.java) | 加入队列 就代表走过，立刻标记 |  |
-| [100.岛屿的最大面积](https://kamacoder.com/problempage.php?pid=1172) | [islandArea](src/graph/dfsbfs/islandArea/Main.java) | 遇到一个岛屿count++ |  |
-| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](src/graph/dfsbfs/islandTotalArea/Main.java) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 |  |
-| [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  |  |  |
+| [100.岛屿的最大面积](https://kamacoder.com/problempage.php?pid=1172) | [islandArea](python/graph/dfsbfs/island/islandArea.py) | 遇到一个岛屿count++ | 2 |
+| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](python/graph/dfsbfs/island/islandTotalArea.py) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 |  |
+| [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  | leetcode题目 |  |
 | [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](src/graph/dfsbfs/islandDown/Main.java) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 |  |
 | [103.水流问题](https://kamacoder.com/problempage.php?pid=1175) | [flow](src/graph/dfsbfs/flow/Main.java) | 从两个边界逆流而上，都经历过的标记上，时间复杂度为$O(mn)$ |  |
 | [110.字符串接龙](https://kamacoder.com/problempage.php?pid=1183) |  | ==hard== **无向图求最短路，广搜最为合适，广搜只要搜到了终点，那么一定是最短的路径**。因为广搜就是以起点中心向四周扩散的搜索。 |  |
