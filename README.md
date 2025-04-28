@@ -610,6 +610,8 @@ void backtracking(参数) {
 
 ## 图论
 
+[题单](https://leetcode.cn/discuss/post/3581143/fen-xiang-gun-ti-dan-tu-lun-suan-fa-dfsb-qyux/)
+
 | 题目链接                                                     | 实现代码                                       | 说明                           |
 | ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------ |
 | [106. 岛屿的周长](https://kamacoder.com/problempage.php?pid=1178) | [islandRound](src/graph/islandRound/Main.java) | 直接模拟，遇到水和边界，边数+1 |
@@ -644,11 +646,19 @@ void dfs(参数) {
 | [99. 岛屿数量-dfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-dfs](python/graph/dfsbfs/island/isIslandNum.py) | 遇到一个没有遍历过的节点陆地，计数器就加一，然后把该节点陆地所能遍历到的陆地都标记上 | 2 |
 | [99. 岛屿数量-bfs](https://kamacoder.com/problempage.php?pid=1171) | [islandnum-bfs](src/graph/dfsbfs/islandnum/bfs.java) | 加入队列 就代表走过，立刻标记 |  |
 | [100.岛屿的最大面积](https://kamacoder.com/problempage.php?pid=1172) | [islandArea](python/graph/dfsbfs/island/islandArea.py) | 遇到一个岛屿count++ | 2 |
-| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](python/graph/dfsbfs/island/islandTotalArea.py) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 |  |
+| [101.孤岛的总面积](https://kamacoder.com/problempage.php?pid=1173) | [islandTotalArea](python/graph/dfsbfs/island/islandTotalArea.py) | 从周边找到陆地然后 通过 dfs或者bfs 将周边靠陆地且相邻的陆地都变成海洋，然后再去重新遍历地图 统计此时还剩下的陆地就可以 | 2 |
 | [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |  | leetcode题目 |  |
-| [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](src/graph/dfsbfs/islandDown/Main.java) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 |  |
+| [面试题 16.19. 水域大小](https://leetcode.cn/problems/pond-sizes-lcci/) | [pondSizes](python/graph/dfsbfs/island/pondSizes.py) | 对角线也可以访问 | |
+| [102.沉没孤岛](https://kamacoder.com/problempage.php?pid=1174) | [islandDown](python/graph/dfsbfs/island/islandDown.py) | 从地图周边出发，将周边空格相邻的陆地都做上标记，然后在遍历一遍地图，遇到 陆地 且没做过标记的，那么都是地图中间的 陆地 ，全部改成水域 | 2 |
 | [103.水流问题](https://kamacoder.com/problempage.php?pid=1175) | [flow](src/graph/dfsbfs/flow/Main.java) | 从两个边界逆流而上，都经历过的标记上，时间复杂度为$O(mn)$ |  |
 | [110.字符串接龙](https://kamacoder.com/problempage.php?pid=1183) |  | ==hard== **无向图求最短路，广搜最为合适，广搜只要搜到了终点，那么一定是最短的路径**。因为广搜就是以起点中心向四周扩散的搜索。 |  |
+| [841. 钥匙和房间](https://leetcode.cn/problems/keys-and-rooms/) | [canVisitAllRooms](python/graph/dfsbfs/canVisitAllRooms.py) |  | |
+| [105.有向图的完全联通](https://kamacoder.com/problempage.php?pid=1177) | [dg](python/graph/dfsbfs/dg.py) | 同上 | |
+| [2316. 统计无向图中无法互相到达点对数](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [countPairs](python/graph/dfsbfs/countPairs.py) | DFS 可以求出每个连通块的大小（岛屿大小）。设当前连通块的大小为 size，那么这个连通块中的每个点，与前面遍历过的连通块的每个点，都是无法互相到达的，根据乘法原理，这有 size⋅total 个，加到答案中。 | |
+|  | |  | |
+|  | |  | |
+
+
 
 
 

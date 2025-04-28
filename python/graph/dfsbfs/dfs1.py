@@ -23,6 +23,5 @@ def main():
         for temp in result:
             print(" ".join(map(str, temp)))
 
-
 if __name__ == "__main__":
     main()
