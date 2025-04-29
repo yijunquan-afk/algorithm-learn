@@ -679,10 +679,17 @@ void dfs(参数) {
 
 ### 拓扑排序
 
-| 题目链接                                                     | 实现代码 | 说明 |
-| ------------------------------------------------------------ | -------- | ---- |
-| [802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/) |          |      |
-|                                                              |          |      |
+![图论题单 图论算法 图论题目 LeetCode 力扣图论 灵茶山艾府](./assets/1738131168-tWFNGZ-006-toposort.png)
+
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [1557. 可以到达所有点的最少点数目](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [findSmallestSetOfVerticesl](python/graph/toposort/findSmallestSetOfVerticesl.py) | 找入度为0的节点                                              |
+| [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) | [findOrder](python/graph/toposort/findOrder.py)              |                                                              |
+| [1462. 课程表 IV](https://leetcode.cn/problems/course-schedule-iv/) | [checkIfPrerequisite](python/graph/toposort/checkIfPrerequisite.py) | 关键点：`isPre[i][t] = isPre[i][t] or isPre[i][cur]`         |
+| [2115. 从给定原材料中找到所有可以做出的菜](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) | [findAllRecipes](python/graph/toposort/findAllRecipes.py)    | ==有点意思==，用初始原材料当队列， 从这道菜的原材料向这道菜连边，# 如果入度变为 0，说明可以做出这道菜 |
+|                                                              |                                                              |                                                              |
+|                                                              |                                                              |                                                              |
+|                                                              |                                                              |                                                              |
 
 对于有向图的拓扑排序，我们可以使用如下思路输出拓扑序（BFS方式）：
 
