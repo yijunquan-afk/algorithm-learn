@@ -664,10 +664,28 @@ void dfs(参数) {
 
 ### 并查集
 
-| 题目链接 | 实现代码 | 说明 |
-| -------- | -------- | ---- |
-|          |          |      |
-|          |          |      |
+```python
+class DisjointSet:
+    def __init__(self, n: int) -> None:
+        self.father = list(range(n))
+    
+    def union(self, x: int, y: int) -> None:
+        x = self.find(x)
+        y = self.find(y)
+        if x == y:
+            return
+        self.father[y] = x
+    
+    def find(self, x: int) -> int:
+        if x != self.father[x]:
+            self.father[x] = self.find(self.father[x]) # 路经压缩
+        return self.father[x]
+```
+
+| 题目链接                                                     | 实现代码                                               | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
+| [721. 账户合并](https://leetcode.cn/problems/accounts-merge/) | [accountMerge](python/graph/unionfind/accountMerge.py) | ==思路有意思==，账户哈希化，首先给每个email映射到一个id，如果发现已经存在映射，则把两个id合并；然后找到每个代表id的邮箱列表；最后组装结果 |
+|                                                              |                                                        |                                                              |
 
 
 
@@ -687,8 +705,10 @@ void dfs(参数) {
 | [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) | [findOrder](python/graph/toposort/findOrder.py)              |                                                              |
 | [1462. 课程表 IV](https://leetcode.cn/problems/course-schedule-iv/) | [checkIfPrerequisite](python/graph/toposort/checkIfPrerequisite.py) | 关键点：`isPre[i][t] = isPre[i][t] or isPre[i][cur]`         |
 | [2115. 从给定原材料中找到所有可以做出的菜](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) | [findAllRecipes](python/graph/toposort/findAllRecipes.py)    | ==有点意思==，用初始原材料当队列， 从这道菜的原材料向这道菜连边，# 如果入度变为 0，说明可以做出这道菜 |
-|                                                              |                                                              |                                                              |
-|                                                              |                                                              |                                                              |
+| [851. 喧闹和富有](https://leetcode.cn/problems/loud-and-rich/) | [loudAndRich](python/graph/toposort/loudAndRich.py)          | 比cur更穷的人，如果cur比这些人更喧嚣，更新这些人的答案       |
+| [802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/) | [eventualSafeNodes](python/graph/toposort/eventualSafeNodes.py) | 反向图，经过一次拓扑排序，入度为0的点为安全<br />            |
+|                                                              |                                                              | ==拓扑排序+dp==                                              |
+| [2050. 并行课程 III](https://leetcode.cn/problems/parallel-courses-iii/) | [minimumTime](python/graph/toposort/minimumTime.py)          | [解析](https://leetcode.cn/problems/parallel-courses-iii/solutions/1063928/tuo-bu-pai-xu-dong-tai-gui-hua-by-endles-dph6)<br />$ f[i] = \text{time}[i] + \max_j f[j]$ |
 |                                                              |                                                              |                                                              |
 
 对于有向图的拓扑排序，我们可以使用如下思路输出拓扑序（BFS方式）：
@@ -701,7 +721,7 @@ void dfs(参数) {
 
 4. 循环流程2、3直到队列为空。
 
-
+**一个有向无环图必然存在至少一个拓扑序与之对应，反之亦然**
 
 ### 最短路算法
 
