@@ -115,9 +115,9 @@
 
 | 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [1. 两数之和](https://leetcode.cn/problems/two-sum/)         | [twoSum](python/hashtable/twoSum.py)                         |                                                              | 2        |
-| [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | [groupAnagrams](python/hashtable/groupAnagrams.py)           | 排序后的字符串作为键                                         | 2        |
-| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时                                    | 2        |
+| [1. 两数之和](https://leetcode.cn/problems/two-sum/)         | [twoSum](python/hashtable/twoSum.py)                         |                                                              | 3        |
+| [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | [groupAnagrams](python/hashtable/groupAnagrams.py)           | 排序后的字符串作为键                                         | 3        |
+| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时                                    | 3        |
 | [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | [intersection](python/hashtable/intersection.py)             |                                                              | 2        |
 | [202. 快乐数](https://leetcode.cn/problems/happy-number/)    | [isHappy](python/hashtable/isHappy.py)                       | divmod 是一个非常方便的函数，可以同时获取商和余数，<br />避免了分别使用 // 和 % 的麻烦。 | 2        |
 | [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)    | [fourSumCount](python/hashtable/fourSumCount.py)             | 两个循环求dict，另外两个循环判断存在性，$O(n^2)$             | 2        |
@@ -226,13 +226,13 @@ for (int i = 0; i < nums.length; i++) {
 2. 更新：更新答案。一般是更新最大值/最小值。
 3. 出：下标为 i−k+1 的元素离开窗口，更新相关统计量。
 
-| 题目链接                                                     | 实现代码                                                     | 说明         | 刷题次数 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ | -------- |
-| [1456. 定长子串中元音的最大数目](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [maxVowels](python/stackqueue/dandiaoqueue/maxVowels.py)     | ==板子题目== |          |
-| [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/) | [findMaxAverage](python/stackqueue/dandiaoqueue/findMaxAverage.py) |              |          |
-| [1343. 大小为 K 且平均值大于等于阈值的子数组数目](https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) |                                                              |              |          |
-|                                                              |                                                              |              |          |
-|                                                              |                                                              |              |          |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [1456. 定长子串中元音的最大数目](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [maxVowels](python/stackqueue/dandiaoqueue/maxVowels.py)     | ==板子题目==                                                 |          |
+| [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/) | [findMaxAverage](python/stackqueue/dandiaoqueue/findMaxAverage.py) |                                                              |          |
+|                                                              |                                                              | 本题维护长为 $n$ 的子串 $s'$ 的每种字母的出现次数。如果 $s'$ 的每种字母的出现次数，和 $p$ 的每种字母的出现次数都相同，那么 $s'$ 是 $p$ 的异位词，把 $s'$ 左端点下标加入答案。 |          |
+|                                                              |                                                              |                                                              |          |
+|                                                              |                                                              |                                                              |          |
 
 
 
@@ -284,7 +284,7 @@ for (int i = 0; i < nums.length; i++) {
 | [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/) | [pathsum](src/tree/pathsum/Solution.java)                    |                                                              |          |
 | [437. 路径总和 III](https://leetcode.cn/problems/path-sum-iii/) | [pathSum](src/tree/pathSum2/Solution.java)                   | 前缀和+哈希表                                                |          |
 | [543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) | [diameterOfBinaryTree](src/tree/diameterOfBinaryTree/Solution.java) | 记录每个节点左子树的深度+右子树的深度                        |          |
-|                                                              |                                                              |                                                              |          |
+| [208. 实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) | [Trie](python/tree/Trie.py)                                  | 26叉树                                                       |          |
 |                                                              |                                                              |                                                              |          |
 |                                                              |                                                              |                                                              |          |
 
@@ -682,10 +682,11 @@ class DisjointSet:
         return self.father[x]
 ```
 
-| 题目链接                                                     | 实现代码                                               | 说明                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
-| [721. 账户合并](https://leetcode.cn/problems/accounts-merge/) | [accountMerge](python/graph/unionfind/accountMerge.py) | ==思路有意思==，账户哈希化，首先给每个email映射到一个id，如果发现已经存在映射，则把两个id合并；然后找到每个代表id的邮箱列表；最后组装结果 |
-|                                                              |                                                        |                                                              |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [721. 账户合并](https://leetcode.cn/problems/accounts-merge/) | [accountMerge](python/graph/unionfind/accountMerge.py)       | ==思路有意思==，账户哈希化，首先给每个email映射到一个id，如果发现已经存在映射，则把两个id合并；然后找到每个代表id的邮箱列表；最后组装结果 |
+| [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/) | [equationsPossible](python/graph/unionfind/equationsPossible.py) |                                                              |
+| [108 冗余的边](https://kamacoder.com/problempage.php?pid=1181) | [redundantEdge](python/graph/unionfind/redundantEdge.py)     | 模版题                                                       |
 
 
 
@@ -702,6 +703,7 @@ class DisjointSet:
 | 题目链接                                                     | 实现代码                                                     | 说明                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [1557. 可以到达所有点的最少点数目](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [findSmallestSetOfVerticesl](python/graph/toposort/findSmallestSetOfVerticesl.py) | 找入度为0的节点                                              |
+| [207. 课程表](https://leetcode.cn/problems/course-schedule/) | [canFinish](python/graph/toposort/canFinish.py)              | 模板题                                                       |
 | [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) | [findOrder](python/graph/toposort/findOrder.py)              |                                                              |
 | [1462. 课程表 IV](https://leetcode.cn/problems/course-schedule-iv/) | [checkIfPrerequisite](python/graph/toposort/checkIfPrerequisite.py) | 关键点：`isPre[i][t] = isPre[i][t] or isPre[i][cur]`         |
 | [2115. 从给定原材料中找到所有可以做出的菜](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) | [findAllRecipes](python/graph/toposort/findAllRecipes.py)    | ==有点意思==，用初始原材料当队列， 从这道菜的原材料向这道菜连边，# 如果入度变为 0，说明可以做出这道菜 |
@@ -737,6 +739,8 @@ class DisjointSet:
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------- |
 | [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/zothers/majorityElement/Solution.java) | 摩尔投票：[题解](https://leetcode.cn/problems/majority-element/solutions/1/169-duo-shu-yuan-su-mo-er-tou-piao-qing-ledrh/?envType=study-plan-v2&envId=top-100-liked) |           |
 | [75. 颜色分类](https://leetcode.cn/problems/sort-colors/)    | [sortColors](src/zothers/sortColors/Solution.java)           | 荷兰国旗问题：[解析](./notes/荷兰国旗问题.md)                | 腾讯-2024 |
+| [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | [nextPermutation](python/zothers/nextPermutation.py)         | 从右向左，找第一个小于右侧相邻数字的数 *x*<br />找 *x* 右边最小的大于 *x* 的数 *y*，交换 *x* 和 *y*<br />反转 *y* 右边的数，把右边的数变成最小的排列 |           |
+|                                                              |                                                              |                                                              |           |
 
 ### 快速幂
 
