@@ -2,17 +2,23 @@
 
 ## 数组
 
-| 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [binarysearch](src/array/binarysearch/Solution.java)         |                                                              |          |
-| [26. 删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](src/array/removeDuplicates/Solution.java) |                                                              |          |
-| [80. 删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | [removeDuplicates](src/array/removeDuplicates2/Solution.java) |                                                              |          |
-| [169. 多数元素](https://leetcode.cn/problems/majority-element/) | [majorityElement](src/array/majorityElement/Solution.java)   | [多种解法](https://leetcode.cn/problems/majority-element/solutions/146074/duo-shu-yuan-su-by-leetcode-solution/?envType=study-plan-v2&envId=top-interview-150) |          |
-| [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [maxProfit](src/array/maxProfit/Solution.java)               | 记录历史最小值，当前的减去其                                 |          |
-| [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [maxProfit](src/array/maxProfit2/Solution.java)              | 把所有递增的买上就行                                         |          |
-| [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/) | [isPalindrome](src/array/isPalindrome/Solution.java)         | 双指针                                                       |          |
-| [274. H 指数](https://leetcode.cn/problems/h-index/)         | [hIndex](src/array/hIndex/Solution.java)                     |                                                              |          |
-|                                                              |                                                              |                                                              |          |
+| 题目链接                                                     | 代码                                                       | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ | -------- |
+| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [search](array/binarysearch/search.py)                     |                                                              |          |
+| [26. 删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) |                                                            |                                                              |          |
+| [80. 删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) |                                                            |                                                              |          |
+| [169. 多数元素](https://leetcode.cn/problems/majority-element/) |                                                            | [多种解法](https://leetcode.cn/problems/majority-element/solutions/146074/duo-shu-yuan-su-by-leetcode-solution/?envType=study-plan-v2&envId=top-interview-150) |          |
+| [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) |                                                            | 记录历史最小值，当前的减去其                                 |          |
+| [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) |                                                            | 把所有递增的买上就行                                         |          |
+| [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/) |                                                            | 双指针                                                       |          |
+| [274. H 指数](https://leetcode.cn/problems/h-index/)         |                                                            |                                                              |          |
+| [13. 罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | [romanToInt](python/array/romanToInt.py)                   | 如果 *x* 的数值小于 *y* 的数值，那么 *x* 的数值要取相反数， 使用`from itertools import pairwise` |          |
+| [12. 整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/) | [intToRoman](python/array/intToRoman.py)                   | `while(num >= value): num -= value result += symbol`，一直减即可 |          |
+| [380. O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) | [RandomizedSet](python/array/RandomizedSet.py)             | 使用一个数组加一个字典，删除的时候最后一个元素顶替删掉元素，更新下标字典，random.choice(nums)随机返回一个元素 |          |
+| [14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [longestCommonPrefix](python/array/longestCommonPrefix.py) | 两两比较即可                                                 |          |
+| [151. 反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/) | [reverseWords](python/array/reverseWords.py)               | 直接用python API：`s.strip(), s.split(), s.reverse()`        |          |
+| [6. Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) | [convert](python/array/convert.py)                         | 分成mode0和mode1构造，注意numColumn=1和2的特殊情况           |          |
+|                                                              |                                                            |                                                              |          |
 
 
 
@@ -22,8 +28,8 @@
 
 | 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [binarysearch](src/array/binarysearch/Solution.java)         |                                                              | 2        |
-| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](src/array/binarysearch/searchInsert/Solution.java) | `return left;`                                               |          |
+| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [search](array/binarysearch/search.py)                       |                                                              | 2        |
+| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](python/array/binarysearch/searchInsert.py)    | `return left;`                                               |          |
 | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](src/array/binarysearch/searchRange/Solution.java) | 两遍二分查找，分别找到最左边和最右边的target位               |          |
 | [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)       | [mySqrt](src/array/binarysearch/mySqrt/Solution.java)        | `(long) mid * mid`                                           |          |
 | [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) |                                                              | 同上                                                         |          |
@@ -67,13 +73,13 @@
 
 ## 双指针
 
-| 题目链接                                                     | 代码                                                | 说明                                                         | 刷题次数 |
-| ------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------ | -------- |
-| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                                      |                                                              |          |
-| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](src/doublepointers/maxArea/Solution.java) |                                                              |          |
-| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/hashtable/threeSum.py)            | `nums[i],nums[left],nums[right]`<br />`nums[i] == nums[i-1]`<br />`nums[left]==nums[left+1]`<br />`nums[right]==nums[right+1]`去重 | 2        |
-|                                                              |                                                     |                                                              |          |
-|                                                              |                                                     |                                                              |          |
+| 题目链接                                                     | 代码                                       | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                             |                                                              | 2        |
+| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](python/twopointers/maxArea.py)   |                                                              | 2        |
+| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/twopointers/threeSum.py) | `nums[i],nums[left],nums[right]`<br />`nums[i] == nums[i-1]`<br />`nums[left]==nums[left+1]`<br />`nums[right]==nums[right-1]`去重 | 2        |
+|                                                              |                                            |                                                              |          |
+|                                                              |                                            |                                                              |          |
 
 
 
@@ -124,6 +130,11 @@
 | [383. 赎金信](https://leetcode.cn/problems/ransom-note/)     | [canConstruct](python/hashtable/canConstruct.py)             |                                                              | 2        |
 | [18. 四数之和](https://leetcode.cn/problems/4sum/)           | [fourSum](python/hashtable/fourSum.py)                       | $O(n^4)$ —> $O(n^3)$                                         | 2        |
 | [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/hashtable/threeSum.py)                     |                                                              | 2        |
+| [290. 单词规律](https://leetcode.cn/problems/word-pattern/)  | [wordPattern](python/hashtable/wordPattern.py)               | `word_dict[ch] = word ch_dict[word] = ch`                    | 1        |
+|                                                              |                                                              |                                                              |          |
+|                                                              |                                                              |                                                              |          |
+|                                                              |                                                              |                                                              |          |
+|                                                              |                                                              |                                                              |          |
 
 
 
@@ -138,21 +149,15 @@
 
 ### 栈的应用
 
-| 题目链接                                                     | 实现代码                                                  | 说明                                                         | 刷题次数 |
-| ------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ | -------- |
-| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                   |                                                              | 2        |
-| [1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [removeDuplicates](python/stackqueue/removeDuplicates.py) |                                                              | 2        |
-| [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [evalRPN](python/stackqueue/evalRPN.py)                   | python可以使用dict+operator来简化代码，多看看代码            | 2        |
-| [394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [decodeString](python/stackqueue/decodeString.py)         | c.isdigit()判断数字<br />c.alpha()判读字母<br />`k = k * 10 + int(c)` | 2        |
+| 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                      |                                                              | 2        |
+| [1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [removeDuplicates](python/stackqueue/removeDuplicates.py)    |                                                              | 2        |
+| [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [evalRPN](python/stackqueue/evalRPN.py)                      | python可以使用dict+operator来简化代码，多看看代码            | 2        |
+| [394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [decodeString](python/stackqueue/decodeString.py)            | c.isdigit()判断数字<br />c.alpha()判读字母<br />`k = k * 10 + int(c)` | 2        |
+| [32. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/) | [longestValidParentheses](python/stackqueue/longestValidParentheses.py) | 索引栈                                                       |          |
 
-### 队列的应用
 
-| 题目链接 | 实现代码 | 说明 |
-| -------- | -------- | ---- |
-|          |          |      |
-|          |          |      |
-|          |          |      |
-|          |          |      |
 
 ### 单调栈
 
@@ -193,7 +198,7 @@ for (int i = 0; i < nums.length; i++) {
 | [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [nextGreaterElement](python/stackqueue/dandiaostack/nextGreaterElement.py) |      | 3 |
 | [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) |[nextGreaterElements](python/stackqueue/dandiaostack/nextGreaterElements.py)|用取模代替数组复制|3|
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) |[StockSpanner](src/stackqueue/StockSpanner/StockSpanner.java)|递减栈，先插入一个`(-1, math.inf)`|3|
-| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |[trap](python/stackqueue/dandiaostack/trap.py)|单调递减栈，注意bottom_h =  height[st.pop()]<br />`(min(height[left], h)-bottom_h)*(i-left-1)`|1|
+| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |[trap](python/stackqueue/dandiaostack/trap.py)|单调递减栈，注意bottom_h =  height[st.pop()]<br />`(min(height[left], h)-bottom_h)*(i-left-1)`<br />另外还有双指针和前缀和的解法，前缀和最简单|1|
 | [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) |[largestRectangleArea](python/stackqueue/dandiaostack/largestRectangleArea.py)|`left = [-1] * n`<br />`right = [n] * n`<br />三次遍历|1·|
 
 
