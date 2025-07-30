@@ -26,18 +26,18 @@
 
 ## 二分查找
 
-| 题目链接                                                     | 代码                                                         | 说明                                                         | 刷题次数 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [search](array/binarysearch/search.py)                       |                                                              | 2        |
-| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](python/array/binarysearch/searchInsert.py)    | `return left;`                                               | 2        |
-| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](python/array/binarysearch/searchRange.py)      | 两遍二分查找，分别找到最左边和最右边的target位               | 2        |
-| [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)       | [mySqrt](python/array/binarysearch/mySqrt.py)                | `(long) mid * mid`                                           | 2        |
-| [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) | [isPerfectSquare](python/array/binarysearch/isPerfectSquare.py) | 同上                                                         | 2        |
-| [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [searchRotate](python/array/binarysearch/rotate)             | 区分是否在同一个递增段，用nums[-1]作区分点                   |          |
-| [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [searchRotate2](python/array/binarysearch/rotate/search2.py) | 先去重，恢复二段性                                           |          |
-| [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | [searchMatrix](src/array/binarysearch/searchMatrix/Solution.java) | `i = mid/m, j = mid%m`                                       |          |
-| [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | [findMin](src/array/binarysearch/findMin/Solution.java)      | `nums[mid] > nums[right]`：最小值在mid左边<br />else: 最小值是mid，或者在mid右边,`minV = min(minV, nums[mid])` |          |
-| [240. 搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) |                                                              |                                                              |          |
+| 题目链接                                                     | 代码                                                         | 说明                                           | 刷题次数 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------- | -------- |
+| [704. 二分查找](https://leetcode.cn/problems/binary-search)  | [search](array/binarysearch/search.py)                       |                                                | 2        |
+| [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | [searchInsert](python/array/binarysearch/searchInsert.py)    | `return left;`                                 | 2        |
+| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange](python/array/binarysearch/searchRange.py)      | 两遍二分查找，分别找到最左边和最右边的target位 | 2        |
+| [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)       | [mySqrt](python/array/binarysearch/mySqrt.py)                | `(long) mid * mid`                             | 2        |
+| [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) | [isPerfectSquare](python/array/binarysearch/isPerfectSquare.py) | 同上                                           | 2        |
+| [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [searchRotate](python/array/binarysearch/rotate)             | 区分是否在同一个递增段，用nums[-1]作区分点     |          |
+| [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [searchRotate2](python/array/binarysearch/rotate/search2.py) | 先去重，恢复二段性                             |          |
+| [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | [searchMatrix](src/array/binarysearch/searchMatrix/Solution.java) | `i = mid/m, j = mid%m`                         |          |
+| [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | [findMin](python/array/binarysearch/rotate/findMin.py)<br />【虾皮】【蔚来】 | 和`nums[n-1]`对比                              |          |
+| [240. 搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) |                                                              |                                                |          |
 
 
 
@@ -48,7 +48,7 @@
 | [203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/) | [removenode](python/linkedlist/removeElements.py)            |                                                              | 3        |
 | [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [getintersectionnode](python/linkedlist/getIntersectionNode.py) | 解法1:  哈希集合<br />解法2: 长对齐+双指针                   | 2        |
 | [707. 设计链表](https://leetcode.cn/problems/design-linked-list/) | [designlinkedlist](src/linkedlist/designlinkedlist)          |                                                              | 2        |
-| [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [reverselist](src/linkedlist/reverselist/Solution.java)      | 使用`prev`和`cur`双指针<br />==多做几遍==                    | 2        |
+| [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [reverselist](python/linkedlist/reverseList.py)              | 使用`prev`和`cur`双指针<br />==多做几遍==                    | 3        |
 | [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](src/linkedlist/isPalindrome/Solution.java)    | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较     | 2        |
 | [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [hasCycle](src/linkedlist/hasCycle/Solution.java)            | 快慢指针一起走，最后能遇到说明就有环                         | 2        |
 | [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [detectCycle](src/linkedlist/detectCycle/Solution.java)      | 两个指针，从头结点和相遇结点，各走一步，直到相遇，相遇点即为环入口 | 2        |
