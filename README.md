@@ -49,6 +49,7 @@
 | [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [getintersectionnode](python/linkedlist/getIntersectionNode.py) | 解法1:  哈希集合<br />解法2: 长对齐+双指针                   | 2        |
 | [707. 设计链表](https://leetcode.cn/problems/design-linked-list/) | [designlinkedlist](src/linkedlist/designlinkedlist)          |                                                              | 2        |
 | [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [reverselist](python/linkedlist/reverseList.py)              | 使用`prev`和`cur`双指针<br />==多做几遍==                    | 3        |
+| [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/) |                                                              |                                                              |          |
 | [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](src/linkedlist/isPalindrome/Solution.java)    | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较     | 2        |
 | [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [hasCycle](src/linkedlist/hasCycle/Solution.java)            | 快慢指针一起走，最后能遇到说明就有环                         | 2        |
 | [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [detectCycle](src/linkedlist/detectCycle/Solution.java)      | 两个指针，从头结点和相遇结点，各走一步，直到相遇，相遇点即为环入口 | 2        |
