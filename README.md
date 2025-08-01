@@ -49,8 +49,8 @@
 | [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [getintersectionnode](python/linkedlist/getIntersectionNode.py) | 解法1:  哈希集合<br />解法2: 长对齐+双指针                   | 2        |
 | [707. 设计链表](https://leetcode.cn/problems/design-linked-list/) | [designlinkedlist](src/linkedlist/designlinkedlist)          |                                                              | 2        |
 | [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [reverselist](python/linkedlist/reverseList.py)              | 使用`prev`和`cur`双指针<br />==多做几遍==                    | 3        |
-| [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/) |                                                              |                                                              |          |
-| [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](src/linkedlist/isPalindrome/Solution.java)    | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较     | 2        |
+| [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/) | [reverseBetween](python/linkedlist/reverseBetween.py)        | t.next.next = cur, t.next = prev                             | 1        |
+| [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](python/linkedlist/isPalindrome.py)            | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较<br />==字节考过== | 2        |
 | [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [hasCycle](src/linkedlist/hasCycle/Solution.java)            | 快慢指针一起走，最后能遇到说明就有环                         | 2        |
 | [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [detectCycle](src/linkedlist/detectCycle/Solution.java)      | 两个指针，从头结点和相遇结点，各走一步，直到相遇，相遇点即为环入口 | 2        |
 | [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | [mergeTwoLists](src/linkedlist/mergeTwoLists/Solution.java)  | ==腾讯面试原题==<br />1、递归法: list1.next = merge(list1.next, list2) list2.next = merge(list1, list2.next)<br />2、迭代法: 设置虚拟节点dummy | 1        |
@@ -74,13 +74,16 @@
 
 ## 双指针
 
-| 题目链接                                                     | 代码                                       | 说明                                                         | 刷题次数 |
-| ------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes]()                             |                                                              | 2        |
-| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](python/twopointers/maxArea.py)   |                                                              | 2        |
-| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/twopointers/threeSum.py) | `nums[i],nums[left],nums[right]`<br />`nums[i] == nums[i-1]`<br />`nums[left]==nums[left+1]`<br />`nums[right]==nums[right-1]`去重 | 2        |
-|                                                              |                                            |                                                              |          |
-|                                                              |                                            |                                                              |          |
+分享丨【算法题单】滑动窗口与双指针（定长/不定长/单序列/双序列/三指针/分组循环）
+https://leetcode.cn/discuss/post/3578981/ti-dan-hua-dong-chuang-kou-ding-chang-bu-rzz7/
+
+| 题目链接                                                     | 代码                                           | 说明                                                         | 刷题次数 |
+| ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------ | -------- |
+| [283. 移动零](https://leetcode.cn/problems/move-zeroes/)     | [moveZeroes](python/twopointers/moveZeroes.py) |                                                              | 3        |
+| [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [maxArea](python/twopointers/maxArea.py)       |                                                              | 2        |
+| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [threeSum](python/twopointers/threeSum.py)     | `nums[i],nums[left],nums[right]`<br />`nums[i] == nums[i-1]`<br />`nums[left]==nums[left+1]`<br />`nums[right]==nums[right-1]`去重 | 2        |
+|                                                              |                                                |                                                              |          |
+|                                                              |                                                |                                                              |          |
 
 
 

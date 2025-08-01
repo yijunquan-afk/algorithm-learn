@@ -7,7 +7,7 @@
     <list default="true" id="670100f6-edf9-44a4-8eb8-634db7595ffb" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/153.寻找旋转排序数组中的最小值.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/153.寻找旋转排序数组中的最小值.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/234.回文链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/234.回文链表.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,7 @@
       <workItem from="1743853262259" duration="3622000" />
       <workItem from="1745390726156" duration="484000" />
       <workItem from="1745740197040" duration="3000" />
-      <workItem from="1753670411757" duration="8186000" />
+      <workItem from="1753670411757" duration="10051000" />
     </task>
     <servers />
   </component>
