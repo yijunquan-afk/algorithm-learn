@@ -51,7 +51,7 @@
 | [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [reverselist](python/linkedlist/reverseList.py)              | 使用`prev`和`cur`双指针<br />==多做几遍==                    | 3        |
 | [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/) | [reverseBetween](python/linkedlist/reverseBetween.py)        | t.next.next = cur, t.next = prev                             | 1        |
 | [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](python/linkedlist/isPalindrome.py)            | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较<br />==字节考过== | 2        |
-| [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [hasCycle](src/linkedlist/hasCycle/Solution.java)            | 快慢指针一起走，最后能遇到说明就有环                         | 2        |
+| [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [hasCycle](python/linkedlist/hasCycle.py)                    | 快慢指针一起走，最后能遇到说明就有环                         | 2        |
 | [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [detectCycle](src/linkedlist/detectCycle/Solution.java)      | 两个指针，从头结点和相遇结点，各走一步，直到相遇，相遇点即为环入口 | 2        |
 | [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | [mergeTwoLists](src/linkedlist/mergeTwoLists/Solution.java)  | ==腾讯面试原题==<br />1、递归法: list1.next = merge(list1.next, list2) list2.next = merge(list1, list2.next)<br />2、迭代法: 设置虚拟节点dummy | 1        |
 | [2. 两数相加](https://leetcode.cn/problems/add-two-numbers/) | [addTwoNumbers](src/linkedlist/addTwoNumbers/Solution.java)  | ==注意进位==                                                 | 1        |
