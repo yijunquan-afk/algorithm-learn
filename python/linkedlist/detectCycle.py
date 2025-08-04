@@ -29,3 +29,5 @@ class Solution:
         return None
 # @lc code=end
 
+if __name__ == "__main__":
+    print("tes")
