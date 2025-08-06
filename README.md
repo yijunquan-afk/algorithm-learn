@@ -53,10 +53,10 @@
 | [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | [isPalindrome](python/linkedlist/isPalindrome.py)            | 空间复杂度为$O(1)$的做法：反转后一半，再和前一半逐一比较<br />==字节考过== | 2        |
 | [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [hasCycle](python/linkedlist/hasCycle.py)                    | 快慢指针一起走，最后能遇到说明就有环                         | 2        |
 | [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [detectCycle](src/linkedlist/detectCycle/Solution.java)      | 两个指针，从头结点和相遇结点，各走一步，直到相遇，相遇点即为环入口 | 2        |
-| [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | [mergeTwoLists](src/linkedlist/mergeTwoLists/Solution.java)  | ==腾讯面试原题==<br />1、递归法: list1.next = merge(list1.next, list2) list2.next = merge(list1, list2.next)<br />2、迭代法: 设置虚拟节点dummy | 1        |
+| [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | [mergeTwoLists](python/linkedlist/mergeTwoLists.py)          | ==腾讯面试原题==<br />1、递归法: list1.next = merge(list1.next, list2) list2.next = merge(list1, list2.next)<br />2、迭代法: 设置虚拟节点dummy | 1        |
 | [2. 两数相加](https://leetcode.cn/problems/add-two-numbers/) | [addTwoNumbers](src/linkedlist/addTwoNumbers/Solution.java)  | ==注意进位==                                                 | 1        |
 | [19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [removeNthFromEnd](src/linkedlist/removeNthFromEnd/Solution.java) | 虚拟头节点+快慢指针，快指针一直走，满指针等n减少为0再走，这样快指针到达尾时慢指针到达了倒数第n | 2        |
-| [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) | [swappairs](src/linkedlist/swappairs/Solution.java)          | 设置虚拟头节点                                               | 2        |
+| [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) | [swappairs](python/linkedlist/swapPairs.py)                  | 设置虚拟头节点                                               | 2        |
 | [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/) |                                                              | 1、哈希表记录<br />2、链表拼接与拆分                         |          |
 | [147. 对链表进行插入排序](https://leetcode.cn/problems/insertion-sort-list/) | [insertionSortList](src/linkedlist/insertionSortList/Solution.java) | 设置dummy，方便插入head之前                                  |          |
 | [148. 排序链表](https://leetcode.cn/problems/sort-list/)     | [sortList](src/linkedlist/sortList/Solution.java)            | 归并排序+合并两个有序链表，递归比较好理解，但是空间复杂度比较高。==比较有价值== |          |
