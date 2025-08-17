@@ -127,8 +127,9 @@ https://leetcode.cn/discuss/post/3578981/ti-dan-hua-dong-chuang-kou-ding-chang-b
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
 | [1. 两数之和](https://leetcode.cn/problems/two-sum/)         | [twoSum](python/hashtable/twoSum.py)                         |                                                              | 3        |
 | [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | [groupAnagrams](python/hashtable/groupAnagrams.py)           | 排序后的字符串作为键                                         | 3        |
-| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时                                    | 3        |
+| [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [longestConsecutive](python/hashtable/longestConsecutive.py) | 要在set中遍历，不然会超时                                    | 4        |
 | [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | [intersection](python/hashtable/intersection.py)             |                                                              | 2        |
+| [350. 两个数组的交集 II](https://leetcode.cn/problems/intersection-of-two-arrays-ii/) | [intersect](python/hashtable/intersect.py)                   | 注意看三个扩展问题：[问题](https://leetcode.cn/problems/intersection-of-two-arrays-ii/solutions/3056041/yi-ci-bian-li-jian-ji-xie-fa-fu-jin-jie-szdb1) | 1        |
 | [202. 快乐数](https://leetcode.cn/problems/happy-number/)    | [isHappy](python/hashtable/isHappy.py)                       | divmod 是一个非常方便的函数，可以同时获取商和余数，<br />避免了分别使用 // 和 % 的麻烦。 | 2        |
 | [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)    | [fourSumCount](python/hashtable/fourSumCount.py)             | 两个循环求dict，另外两个循环判断存在性，$O(n^2)$             | 2        |
 | [383. 赎金信](https://leetcode.cn/problems/ransom-note/)     | [canConstruct](python/hashtable/canConstruct.py)             |                                                              | 2        |
@@ -155,10 +156,10 @@ https://leetcode.cn/discuss/post/3578981/ti-dan-hua-dong-chuang-kou-ding-chang-b
 
 | 题目链接                                                     | 实现代码                                                     | 说明                                                         | 刷题次数 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                      |                                                              | 2        |
+| [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [isValid](python/stackqueue/isValid.py)                      |                                                              | 3        |
 | [1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [removeDuplicates](python/stackqueue/removeDuplicates.py)    |                                                              | 2        |
 | [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [evalRPN](python/stackqueue/evalRPN.py)                      | python可以使用dict+operator来简化代码，多看看代码            | 2        |
-| [394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [decodeString](python/stackqueue/decodeString.py)            | c.isdigit()判断数字<br />c.alpha()判读字母<br />`k = k * 10 + int(c)` | 2        |
+| [394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [decodeString](python/stackqueue/decodeString.py)            | c.isdigit()判断数字<br />c.alpha()判读字母<br />`k = k * 10 + int(c)`<br />==重点== | 3        |
 | [32. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/) | [longestValidParentheses](python/stackqueue/longestValidParentheses.py) | 索引栈                                                       |          |
 
 
